@@ -1,0 +1,22 @@
+{% do view.registerCssFile(siteUrl ~ "assets/css/main.css") %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+
+<head>
+	{% block head %}
+	<meta charset="UTF-8">
+	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.typekit.net/tom5gru.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/5bdd2455c6.js" crossorigin="anonymous"></script>
+
+	{% endblock %}
+</head>
+
+<body class="">
+	{% block body %}{% endblock %}
+</body>
+
+</html>
