@@ -1,16 +1,21 @@
 {% extends "_layouts/base-layout" %}
 {% block body %}
 <header>
-  {% include "_sections/header-section" %}
+  {% include "_sections/_general/header-section" %}
   {% block header %}
   {% endblock %}
 </header>
 <nav>
-  {% include "_sections/nav-section" %}
+  {% include "_sections/_general/nav-section" %}
   {% block nav %}
   {% endblock %}
 </nav>
 <main>
+  <section>
+    {% include "_sections/_home/introHome-section" %}
+    {% block introHome %}
+    {% endblock %}
+  </section>
   <section>
     {% include "_sections/_home/featuredWork-section" %}
     {% block featuredWork %}
