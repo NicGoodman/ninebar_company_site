@@ -627,7 +627,7 @@ h5 {
   font-size: 1.5rem;
   font-family: chaparral-pro, serif;
   font-weight: 700;
-  text-transform: lowercase;
+  font-style: italic;
 }
 
 p {
