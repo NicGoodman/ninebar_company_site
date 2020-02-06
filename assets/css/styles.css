@@ -46,3 +46,83 @@ h6 {
 @tailwind components;
 
 @tailwind utilities;
+
+.nb-dark-blue-gradient {
+  background: rgb(101,158,200);
+  background: linear-gradient(345deg, rgba(101,158,200,1) 3%, rgba(0,42,78,1) 88%);
+}
+
+.nb-light-blue-gradient {
+  background: rgb(227,236,236);
+  background: linear-gradient(345deg, rgba(227,236,236,1) -25%, rgba(101,158,200,1) 81%);
+}
+
+.nb-pink-gradient {
+  background: rgb(240,145,145);
+  background: linear-gradient(345deg, rgba(240,145,145,1) 0%, rgba(253,230,232,1) 100%);
+}
+
+.nb-yellow-gradient {
+  background: rgb(232,154,27);
+  background: linear-gradient(345deg, rgba(232,154,27,1) 0%, rgba(255,203,88,1) 100%);
+}
+
+.bottom-sloped {
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
+}
+
+.top-sloped {
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 3vw,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    100% 3vw,
+    100% 100%,
+    0 100%
+  );
+}
+
+.both-sloped {
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 3vw,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
+  clip-path: polygon(
+    0 0,
+    100% 3vw,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
+}
+
+.opposite-sloped {
+  -webkit-clip-path: polygon(
+    0 3vw,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
+  clip-path: polygon(
+    0 3vw,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 3vw)
+  );
+}
