@@ -14562,7 +14562,7 @@ h6 {
   );
 }
 
-.sloped-section-wrap {
+.shadow-wrap {
   -webkit-filter: drop-shadow(10px 10px 33px rgba(0, 42, 78, 0.33));
           filter: drop-shadow(10px 10px 33px rgba(0, 42, 78, 0.33));
 }
