@@ -4,42 +4,49 @@ h1 {
   @apply text-8xl;
   @apply font-sans;
   @apply font-bold;
+  @apply lowercase;
 }
 
 h2 {
   @apply text-6xl;
   @apply font-serif;
   @apply font-bold;
+  @apply lowercase;
 }
 
 h3 {
   @apply text-5xl;
   @apply font-sans;
   @apply font-bold;
+  @apply lowercase;
 }
 
 h4 {
   @apply text-3xl;
   @apply font-serif;
   @apply font-bold;
+  @apply lowercase;
 }
 
 h5 {
   @apply text-2xl;
   @apply font-serif;
   @apply font-bold;
+  @apply lowercase;
 }
 
 p {
   @apply text-xl;
   @apply font-serif;
   @apply font-semibold;
+  @apply normal-case;
 }
 
 h6 {
   @apply text-base;
   @apply font-sans;
   @apply font-semibold;
+  @apply lowercase;
 }
 
 
