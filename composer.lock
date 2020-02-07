@@ -2614,16 +2614,16 @@
         },
         {
             "name": "nystudio107/craft-imageoptimize",
-            "version": "1.6.8",
+            "version": "1.6.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nystudio107/craft-imageoptimize.git",
-                "reference": "c5603d75a8b395e6a997cce36235d736e1ec596e"
+                "reference": "6a0f96ddd5513a6adacc451b39239a7d1d52e18d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/c5603d75a8b395e6a997cce36235d736e1ec596e",
-                "reference": "c5603d75a8b395e6a997cce36235d736e1ec596e",
+                "url": "https://api.github.com/repos/nystudio107/craft-imageoptimize/zipball/6a0f96ddd5513a6adacc451b39239a7d1d52e18d",
+                "reference": "6a0f96ddd5513a6adacc451b39239a7d1d52e18d",
                 "shasum": ""
             },
             "require": {
@@ -2676,7 +2676,7 @@
                 "optimize",
                 "optimize-images"
             ],
-            "time": "2020-01-27T18:57:18+00:00"
+            "time": "2020-02-06T22:35:40+00:00"
         },
         {
             "name": "nystudio107/craft-imageoptimize-imgix",
@@ -5164,16 +5164,16 @@
         },
         {
             "name": "voku/portable-ascii",
-            "version": "1.4.7",
+            "version": "1.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/voku/portable-ascii.git",
-                "reference": "a691852adbf7518370332fd7921292d8dad34e7e"
+                "reference": "a3801f5facf187a28cc2cae7b98a540c36406dc4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/a691852adbf7518370332fd7921292d8dad34e7e",
-                "reference": "a691852adbf7518370332fd7921292d8dad34e7e",
+                "url": "https://api.github.com/repos/voku/portable-ascii/zipball/a3801f5facf187a28cc2cae7b98a540c36406dc4",
+                "reference": "a3801f5facf187a28cc2cae7b98a540c36406dc4",
                 "shasum": ""
             },
             "require": {
@@ -5209,7 +5209,7 @@
                 "clean",
                 "php"
             ],
-            "time": "2020-01-27T08:58:33+00:00"
+            "time": "2020-02-06T21:46:48+00:00"
         },
         {
             "name": "voku/portable-utf8",
