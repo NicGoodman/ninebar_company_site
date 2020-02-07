@@ -1,20 +1,22 @@
 {% extends "_layouts/base-layout" %}
 {% block body %}
-<header>
-  {% include "_sections/_general/header-section" %}
-  {% block header %}
-  {% endblock %}
-</header>
-<nav>
-  {% include "_sections/_general/nav-section" %}
-  {% block nav %}
-  {% endblock %}
-</nav>
 <main>
   <section>
-    {% include "_sections/_home/introHome-section" %}
-    {% block introHome %}
-    {% endblock %}
+    <div class="flex flex-col h-screen bg-nb-light-blue-gradient">
+      <header>
+        {% include "_sections/_general/header-section" %}
+        {% block header %}
+        {% endblock %}
+      </header>
+      <nav>
+        {% include "_sections/_general/nav-section" %}
+        {% block nav %}
+        {% endblock %}
+      </nav>
+      {% include "_sections/_home/introHome-section" %}
+      {% block introHome %}
+      {% endblock %}
+    </div>
   </section>
   <section>
     {% include "_sections/_home/featuredWork-section" %}
