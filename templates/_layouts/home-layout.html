@@ -1,6 +1,11 @@
 {% extends "_layouts/base-layout" %}
 {% block body %}
 <main>
+  <nav class="flex flex-col h-screen w-screen nb-light-blue-gradient">
+    {% include "_sections/_general/nav-section" %}
+    {% block nav %}
+    {% endblock %}
+  </nav>
   <section>
     <div class="flex flex-col h-full nb-light-blue-gradient">
         <header class="p-8 mb-24">
@@ -8,11 +13,6 @@
           {% block header %}
           {% endblock %}
         </header>
-        <nav class="h-screen w-screen">
-          {% include "_sections/_general/nav-section" %}
-          {% block nav %}
-          {% endblock %}
-        </nav>
         <article class="p-8">
         {% include "_sections/_home/introHome-section" %}
         {% block introHome %}
