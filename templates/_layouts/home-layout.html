@@ -2,18 +2,18 @@
 {% block body %}
 <main>
   <section>
-    <div class="flex flex-col h-screen nb-light-blue-gradient">
+    <div class="flex flex-col h-full nb-light-blue-gradient">
         <header class="p-8 mb-24">
           {% include "_sections/_general/header-section" %}
           {% block header %}
           {% endblock %}
         </header>
-        <nav class="">
+        <nav class="bottom-0 fixed">
           {% include "_sections/_general/nav-section" %}
           {% block nav %}
           {% endblock %}
         </nav>
-        <article class="p-8 flex-grow">
+        <article class="p-8">
         {% include "_sections/_home/introHome-section" %}
         {% block introHome %}
         {% endblock %}
