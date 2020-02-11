@@ -3,7 +3,7 @@
   {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
   {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
-  <h2>{{ preText.text }}</h2>
+  <h2>{{ preText.text }}
   <div class="slidingVertical">
       {% for textOption in rotatingText %}
   <h2 class="text-nb-dark-blue">
@@ -11,6 +11,6 @@
   </h2>
     {% endfor %}
   </div>
-<h2>{{ postText.text }}</h2>
+{{ postText.text }}</h2>
 </div>
 {% endblock %}
