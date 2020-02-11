@@ -1,15 +1,13 @@
 {% block heroStatement %}
-<div class="flex flex-row flex-wrap text-nb-mint">
+<div class="text-nb-mint">
   {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
   {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
-  <div class="text-wrapper text-center">
+  <div class="text-wrapper text-right">
     {{ preText.text }}&nbsp;
-    <div class="animated-words inline-block">
       {% for textOption in rotatingText %}
-        <span class="nb-dark-blue">{{ textOption.text }}</span>
+        <div id="content-{{[ loop.index ]}}" class="nb-dark-blue inline-block">{{ textOption.text }}</div>
       {% endfor %}
-      </div>
       <br/>
       {{ postText.text }}
   </div>
