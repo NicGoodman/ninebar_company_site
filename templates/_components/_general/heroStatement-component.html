@@ -1,8 +1,8 @@
 {% block heroStatement %}
 <div class="text-nb-mint">
-  {% set preText = entry.heroStatement.type('preStaticText').all() %}
+  {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
-  {% set postText = entry.heroStatement.type('postStaticText').all() %}
+  {% set postText = entry.heroStatement.type('postStaticText').one() %}
   <h2>{{ preText.text }}</h2>
   {% for textOption in rotatingText %}
   <h2 class="text-nb-dark-blue">
