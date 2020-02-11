@@ -14,6 +14,8 @@
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
 	<script src="https://embed.small.chat/T0SLR83ABGSWB1QG05.js" async></script>
+	<link href="assets/css/hanging-punctuation.css" media="screen" rel="stylesheet" />
+  <script src="assets/js/hanging-punctuation.js"></script>
 
 	<script>
 		function showNav() {
@@ -30,6 +32,7 @@
 				y.style.overflow = "auto";
 			}
 		}
+		$('#heroText').hangPunctuation();
 	</script>
 
 	{% endblock %}
