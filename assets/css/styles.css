@@ -54,6 +54,7 @@ button {
   @apply bg-nb-yellow;
   @apply p-4;
   @apply shadow-lg;
+  @apply inline-block;
 }
 
 @screen md {
