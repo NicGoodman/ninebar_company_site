@@ -23,11 +23,11 @@
 			var z = document.getElementById("navIcon");
 			if (x.style.display === "none") {
 				x.style.display = "block";
-				z.addClass("rotate-90");
+				z.classList.add("rotate-45");
 				y.style.overflow = "hidden";
 			} else {
 				x.style.display = "none";
-				z.removeClass("rotate-90");
+				z.classList.remove("rotate-45");
 				y.style.overflow = "auto";
 			}
 		}
