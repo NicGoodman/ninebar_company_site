@@ -6,7 +6,7 @@
 </div>
 <div class="flex flex-grow shadow-wrap h-full">
 <div class="flex-grow top-sloped nb-pink-gradient w-full text-nb-dark-blue p-20 text-right">
-<ul id="cycleList">
+<ul>
   {% set pages = craft.entries.section('pages').all() %}
   {% for page in pages %}
     <li><h1 class="hover:text-nb-light-blue shadow-xl">{{ page.getLink() }}</h1></li>
