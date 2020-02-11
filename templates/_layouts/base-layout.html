@@ -20,34 +20,17 @@
 		function showNav() {
 			var x = document.getElementById("mainNav");
 			var y = document.body;
+			var z = document.getElementById("navIcon");
 			if (x.style.display === "none") {
 				x.style.display = "block";
+				z.addClass("rotate-90");
 				y.style.overflow = "hidden";
 			} else {
 				x.style.display = "none";
+				z.removeClass("rotate-90");
 				y.style.overflow = "auto";
 			}
 		}
-	</script>
-	<script>
-		$(document).ready(function() {
-			$(".content").each(function() {
-				$(this).hide();
-				if ($(this).attr('id') == 'main') {
-					$(this).show();
-				}
-			});
-			$(".navCard").on("click", function(e) {
-				e.preventDefault();
-				var id = $(this).attr('data-related');
-				$(".content").each(function() {
-					$(this).hide();
-					if ($(this).attr('id') == id) {
-						$(this).show();
-					}
-				});
-			});
-		});
 	</script>
 
 	{% endblock %}
