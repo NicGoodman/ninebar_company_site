@@ -64,7 +64,7 @@ button {
 }
 
 button:hover {
-  @apply scale-90;
+  @apply scale-95;
   @apply text-nb-yellow;
   @apply bg-nb-dark-blue;
 }

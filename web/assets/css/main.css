@@ -668,8 +668,8 @@ button {
 }
 
 button:hover {
-  --transform-scale-x: .9;
-  --transform-scale-y: .9;
+  --transform-scale-x: .95;
+  --transform-scale-y: .95;
   color: #FFCB58;
   background-color: #002A4E;
 }
