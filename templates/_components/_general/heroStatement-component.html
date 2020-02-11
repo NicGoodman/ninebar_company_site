@@ -6,7 +6,7 @@
   <div class="text-wrapper text-right">
     {{ preText.text }}&nbsp;
       {% for textOption in rotatingText %}
-        <div id="content-{{[ loop.index ]}}" class="nb-dark-blue inline-block">{{ textOption.text }}</div>
+        <div id="content-{{ loop.index }}" class="nb-dark-blue inline-block">{{ textOption.text }}</div>
       {% endfor %}
       <br/>
       {{ postText.text }}
