@@ -1,42 +1,42 @@
 @tailwind base;
 
 h1 {
-  @apply text-8xl;
+  @apply text-6xl;
   @apply font-sans;
   @apply font-bold;
   @apply lowercase;
 }
 
 h2 {
-  @apply text-5xl;
+  @apply text-4xl;
   @apply font-serif;
   @apply font-bold;
   @apply lowercase;
 }
 
 h3 {
-  @apply text-5xl;
+  @apply text-4xl;
   @apply font-sans;
   @apply font-bold;
   @apply lowercase;
 }
 
 h4 {
-  @apply text-3xl;
+  @apply text-2xl;
   @apply font-serif;
   @apply font-bold;
   @apply lowercase;
 }
 
 h5 {
-  @apply text-2xl;
+  @apply text-xl;
   @apply font-serif;
   @apply font-bold;
   @apply italic;
 }
 
 p {
-  @apply text-xl;
+  @apply text-lg;
   @apply font-serif;
   @apply font-semibold;
   @apply normal-case;
@@ -49,6 +49,56 @@ h6 {
   @apply lowercase;
 }
 
+@screen md {
+  h1 {
+    @apply text-8xl;
+    @apply font-sans;
+    @apply font-bold;
+    @apply lowercase;
+  }
+
+  h2 {
+    @apply text-5xl;
+    @apply font-serif;
+    @apply font-bold;
+    @apply lowercase;
+  }
+
+  h3 {
+    @apply text-5xl;
+    @apply font-sans;
+    @apply font-bold;
+    @apply lowercase;
+  }
+
+  h4 {
+    @apply text-3xl;
+    @apply font-serif;
+    @apply font-bold;
+    @apply lowercase;
+  }
+
+  h5 {
+    @apply text-2xl;
+    @apply font-serif;
+    @apply font-bold;
+    @apply italic;
+  }
+
+  p {
+    @apply text-xl;
+    @apply font-serif;
+    @apply font-semibold;
+    @apply normal-case;
+  }
+
+  h6 {
+    @apply text-base;
+    @apply font-sans;
+    @apply font-semibold;
+    @apply lowercase;
+  }
+}
 
 @tailwind components;
 

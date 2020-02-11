@@ -596,42 +596,42 @@ video {
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   font-family: proxima-nova, sans-serif;
   font-weight: 700;
   text-transform: lowercase;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-family: chaparral-pro, serif;
   font-weight: 700;
   text-transform: lowercase;
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2.25rem;
   font-family: proxima-nova, sans-serif;
   font-weight: 700;
   text-transform: lowercase;
 }
 
 h4 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-family: chaparral-pro, serif;
   font-weight: 700;
   text-transform: lowercase;
 }
 
 h5 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: chaparral-pro, serif;
   font-weight: 700;
   font-style: italic;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-family: chaparral-pro, serif;
   font-weight: 600;
   text-transform: none;
@@ -642,6 +642,57 @@ h6 {
   font-family: proxima-nova, sans-serif;
   font-weight: 600;
   text-transform: lowercase;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-family: chaparral-pro, serif;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+
+  h4 {
+    font-size: 1.875rem;
+    font-family: chaparral-pro, serif;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    font-family: chaparral-pro, serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  p {
+    font-size: 1.25rem;
+    font-family: chaparral-pro, serif;
+    font-weight: 600;
+    text-transform: none;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 600;
+    text-transform: lowercase;
+  }
 }
 
 .container {
