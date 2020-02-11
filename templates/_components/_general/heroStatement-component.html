@@ -3,7 +3,7 @@
   {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
   {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
-  <div id"heroText" class="mb-6">
+  <div id="heroText" class="mb-6">
     <h2>
     {{ preText.text }}
       {% for textOption in rotatingText %}
