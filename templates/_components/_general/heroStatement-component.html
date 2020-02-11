@@ -1,5 +1,5 @@
 {% block heroStatement %}
-<div class="w-full md:w-4/5 text-nb-mint self-end">
+<div class="w-full md:w-4/5 text-nb-mint self-end flex flex-col">
   {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
   {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
@@ -13,5 +13,6 @@
       {{ postText.text }}
       </h2>
   </div>
+  <button type="button" name="callToAction"><h5 class="text-nb-dark-blue">{{ entry.callToActionText }}</h5></button>
 </div>
 {% endblock %}

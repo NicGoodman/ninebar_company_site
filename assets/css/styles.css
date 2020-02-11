@@ -49,6 +49,13 @@ h6 {
   @apply lowercase;
 }
 
+button {
+  @apply rounded;
+  @apply bg-nb-yellow;
+  @apply p-4;
+  @apply shadow-lg;
+}
+
 @screen md {
   h1 {
     @apply text-8xl;
