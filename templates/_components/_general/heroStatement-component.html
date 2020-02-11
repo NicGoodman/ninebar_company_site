@@ -4,14 +4,14 @@
   {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
   <div class="text-right">
-    <h4>
+    <h2>
     {{ preText.text }}
       {% for textOption in rotatingText %}
         <div id="content-{{ loop.index }}" class="text-nb-dark-blue inline-block">{{ textOption.text }}</div>
       {% endfor %}
       <br/>
       {{ postText.text }}
-      </h4>
+      </h2>
   </div>
 </div>
 {% endblock %}
