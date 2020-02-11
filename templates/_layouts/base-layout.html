@@ -43,7 +43,7 @@ animation: topToBottom 12.5s linear infinite 0s;
 -ms-animation: topToBottom 12.5s linear infinite 0s;
 -webkit-animation: topToBottom 12.5s linear infinite 0s;
 color: #0e2b4e;
-opacity: 0;
+visibility: hidden;
 overflow: hidden;
 position: absolute;
 }
@@ -69,31 +69,31 @@ animation-delay: 10s;
 }
 /*topToBottom Animation*/
 @-moz-keyframes topToBottom{
-	0% { opacity: 0; }
-	5% { opacity: 0; -moz-transform: translateY(-50px); }
-	10% { opacity: 1; -moz-transform: translateY(0px); }
-	25% { opacity: 1; -moz-transform: translateY(0px); }
-	30% { opacity: 0; -moz-transform: translateY(50px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+	0% { visibility: hidden; }
+	5% { visibility: hidden; -moz-transform: translateY(-50px); }
+	10% { visibility: visible; -moz-transform: translateY(0px); }
+	25% { visibility: visible; -moz-transform: translateY(0px); }
+	30% { visibility: hidden; -moz-transform: translateY(50px); }
+	80% { visibility: hidden; }
+	100% { visibility: hidden; }
 }
 @-webkit-keyframes topToBottom{
-	0% { opacity: 0; }
-	5% { opacity: 0; -webkit-transform: translateY(-50px); }
-	10% { opacity: 1; -webkit-transform: translateY(0px); }
-	25% { opacity: 1; -webkit-transform: translateY(0px); }
-	30% { opacity: 0; -webkit-transform: translateY(50px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+	0% { visibility: hidden; }
+	5% { visibility: hidden; -webkit-transform: translateY(-50px); }
+	10% { visibility: visible; -webkit-transform: translateY(0px); }
+	25% { visibility: visible; -webkit-transform: translateY(0px); }
+	30% { visibility: hidden; -webkit-transform: translateY(50px); }
+	80% { visibility: hidden; }
+	100% { visibility: hidden; }
 }
 @-ms-keyframes topToBottom{
-	0% { opacity: 0; }
-	5% { opacity: 0; -ms-transform: translateY(-50px); }
-	10% { opacity: 1; -ms-transform: translateY(0px); }
-	25% { opacity: 1; -ms-transform: translateY(0px); }
-	30% { opacity: 0; -ms-transform: translateY(50px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+	0% { visibility: hidden; }
+	5% { visibility: hidden; -ms-transform: translateY(-50px); }
+	10% { visibility: visible; -ms-transform: translateY(0px); }
+	25% { visibility: visible; -ms-transform: translateY(0px); }
+	30% { visibility: hidden; -ms-transform: translateY(50px); }
+	80% { visibility: hidden; }
+	100% { visibility: hidden; }
 }
 </style>
 
