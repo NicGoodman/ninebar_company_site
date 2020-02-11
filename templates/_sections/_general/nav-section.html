@@ -7,7 +7,7 @@
 <div class="flex flex-grow shadow-wrap">
 <div class="flex-grow top-sloped nb-pink-gradient w-full h-full text-nb-dark-blue">
 <ul>
-  {% for entry in craft.entires.section('pages').all() %}
+  {% for entry in craft.entries.section('pages').all() %}
     <li><h1>{{ page.getLink() }}</h1></li>
   {% endfor %}
 </ul>
