@@ -52,6 +52,7 @@ h6 {
 button {
   @apply rounded;
   @apply bg-nb-yellow;
+  @apply text-nb-dark-blue
   @apply p-4;
   @apply shadow-lg;
   @apply inline-block;
