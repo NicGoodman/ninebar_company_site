@@ -1,5 +1,5 @@
 {% block heroStatement %}
-<div class="flex flex-row flex-wrap text-nb-mint text-left">
+<div class="flex flex-row flex-wrap text-nb-mint">
   {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
   {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
@@ -10,6 +10,8 @@
         <span class="nb-dark-blue">{{ textOption.text }}</span>
       {% endfor %}
       </div>
+      <br/>
+      {{ postText.text }}
   </div>
 </div>
 {% endblock %}
