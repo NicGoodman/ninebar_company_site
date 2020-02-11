@@ -3,8 +3,8 @@
   {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
   {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
-  <div id="heroText" class="mb-6">
-    <h2>
+  <div class="mb-6">
+    <h2 id="heroText">
     {{ preText.text }}
       {% for textOption in rotatingText %}
         <div id="content-{{ loop.index }}" class="text-nb-dark-blue inline-block">{{ textOption.text }}</div>
