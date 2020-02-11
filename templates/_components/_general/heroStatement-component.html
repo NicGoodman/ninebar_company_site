@@ -1,0 +1,11 @@
+{% block heroStatement %}
+<div class="text-nb-mint">
+  {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
+  {% for textOption in rotatingText %}
+  <h2 class="text-nb-dark-blue">
+    {{ textOption.text }}
+  </h2>
+  {% endfor %}
+
+</div>
+{% endblock %}
