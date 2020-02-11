@@ -55,6 +55,16 @@ button {
   @apply p-4;
   @apply shadow-lg;
   @apply inline-block;
+  @apply transition;
+  @apply ease-in-out;
+  @apply duration-300;
+  @apply transform;
+}
+
+button:hover {
+  @apply scale-90;
+  @apply text-nb-yellow;
+  @apply bg-nb-dark-blue;
 }
 
 @screen md {
