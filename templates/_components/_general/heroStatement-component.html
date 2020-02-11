@@ -4,13 +4,12 @@
   {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
   <h2>{{ preText.text }}</h2>
-  <ul id="cycleList">
-  {% for textOption in rotatingText %}
-  <li><h2 class="text-nb-dark-blue">
+  <div class="slidingVertical">
+      {% for textOption in rotatingText %}
+  <span><h2 class="text-nb-dark-blue">
     {{ textOption.text }}
-  </h2></li>
+  </h2></span>
   {% endfor %}
-  </ul>
 <h2>{{ postText.text }}</h2>
 </div>
 {% endblock %}
