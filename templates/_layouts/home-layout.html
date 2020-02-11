@@ -8,12 +8,12 @@
   </nav>
   <section>
     <div class="flex flex-col h-screen nb-light-blue-gradient">
-        <header class="p-8 mb-24">
+        <header class="px-4 mt-4 md:px-8 md:pt-8 md:mb-24">
           {% include "_sections/_general/header-section" %}
           {% block header %}
           {% endblock %}
         </header>
-        <article class="flex flex-col p-8 max-w-screen-xl self-center">
+        <article class="flex flex-col px-8 max-w-screen-xl self-center z-40">
         {% include "_sections/_home/introHome-section" %}
         {% block introHome %}
         {% endblock %}
