@@ -33,67 +33,55 @@
 		}
 	</script>
 <style>
-/*Vertical Sliding*/
-.slidingVertical{
-display: inline;
-text-indent: 8px;
+.animated-words span:nth-child(2) {
+    -webkit-animation-delay: 3s;
+    -ms-animation-delay: 3s;
+    animation-delay: 3s;
+    color: #6b889d;
 }
-.slidingVertical span{
-animation: topToBottom 12.5s linear infinite 0s;
--ms-animation: topToBottom 12.5s linear infinite 0s;
--webkit-animation: topToBottom 12.5s linear infinite 0s;
-color: #0e2b4e;
-visibility: hidden;
-overflow: hidden;
-position: absolute;
+.animated-words span:nth-child(3) {
+    -webkit-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+    color: #6b739d;
 }
-.slidingVertical span:nth-child(2){
-animation-delay: 2.5s;
--ms-animation-delay: 2.5s;
--webkit-animation-delay: 2.5s;
+.animated-words span:nth-child(4) {
+    -webkit-animation-delay: 9s;
+    -ms-animation-delay: 9s;
+    animation-delay: 9s;
+    color: #7a6b9d;
 }
-.slidingVertical span:nth-child(3){
-animation-delay: 5s;
--ms-animation-delay: 5s;
--webkit-animation-delay: 5s;
+.animated-words span:nth-child(5) {
+    -webkit-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+    color: #8d6b9d;
 }
-.slidingVertical span:nth-child(4){
-animation-delay: 7.5s;
--ms-animation-delay: 7.5s;
--webkit-animation-delay: 7.5s;
+.animated-words span:nth-child(6) {
+    -webkit-animation-delay: 15s;
+    -ms-animation-delay: 15s;
+    animation-delay: 15s;
+    color: #9b6b9d;
 }
-.slidingVertical span:nth-child(5){
-animation-delay: 10s;
--ms-animation-delay: 10s;
--webkit-animation-delay: 10s;
+
+.animated-words span {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    color: #6b969d;
+    -webkit-animation: animateWord 18s linear infinite 0s;
+    -ms-animation: animateWord 18s linear infinite 0s;
+    animation: animateWord 18s linear infinite 0s;
 }
-/*topToBottom Animation*/
-@-moz-keyframes topToBottom{
-	0% { visibility: hidden; }
-	5% { visibility: hidden; -moz-transform: translateY(-50px); }
-	10% { visibility: visible; -moz-transform: translateY(0px); }
-	25% { visibility: visible; -moz-transform: translateY(0px); }
-	30% { visibility: hidden; -moz-transform: translateY(50px); }
-	80% { visibility: hidden; }
-	100% { visibility: hidden; }
-}
-@-webkit-keyframes topToBottom{
-	0% { visibility: hidden; }
-	5% { visibility: hidden; -webkit-transform: translateY(-50px); }
-	10% { visibility: visible; -webkit-transform: translateY(0px); }
-	25% { visibility: visible; -webkit-transform: translateY(0px); }
-	30% { visibility: hidden; -webkit-transform: translateY(50px); }
-	80% { visibility: hidden; }
-	100% { visibility: hidden; }
-}
-@-ms-keyframes topToBottom{
-	0% { visibility: hidden; }
-	5% { visibility: hidden; -ms-transform: translateY(-50px); }
-	10% { visibility: visible; -ms-transform: translateY(0px); }
-	25% { visibility: visible; -ms-transform: translateY(0px); }
-	30% { visibility: hidden; -ms-transform: translateY(50px); }
-	80% { visibility: hidden; }
-	100% { visibility: hidden; }
+
+@-webkit-keyframes animateWord {
+    0% { opacity: 0; }
+    2% { opacity: 0; -webkit-transform: translateY(-30px); }
+    5% { opacity: 1; -webkit-transform: translateY(0px);}
+    17% { opacity: 1; -webkit-transform: translateY(0px); }
+    20% { opacity: 0; -webkit-transform: translateY(30px); }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
 }
 </style>
 
