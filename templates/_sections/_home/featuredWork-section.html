@@ -1,5 +1,5 @@
 {% block featuredWork %}
-{% set image = entry,featuredWork.first().projectThumbnail.one() %}
+{% set image = entry.featuredWork.first().projectThumbnail.one() %}
 
 <div class="flex flex-grow shadow-wrap h-full -mt-24">
   <div class="flex-grow top-sloped nb-pink-gradient w-full text-nb-dark-blue">
