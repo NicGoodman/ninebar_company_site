@@ -53,7 +53,8 @@ button {
   @apply rounded;
   @apply bg-nb-yellow;
   @apply text-nb-dark-blue;
-  @apply p-4;
+  @apply py-4;
+  @apply px-6;
   @apply shadow-lg;
   @apply inline-block;
   @apply transition;

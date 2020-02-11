@@ -648,7 +648,10 @@ button {
   border-radius: 0.25rem;
   background-color: #FFCB58;
   color: #002A4E;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   display: inline-block;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
