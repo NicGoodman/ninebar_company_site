@@ -4,7 +4,7 @@
   {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
   <div class="text-wrapper text-center">
-    {{ preText.text }}
+    {{ preText.text }}&nbsp;
     <div class="animated-words inline-block">
       {% for textOption in rotatingText %}
         <span class="nb-dark-blue">{{ textOption.text }}</span>
