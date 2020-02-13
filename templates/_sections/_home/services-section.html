@@ -6,10 +6,9 @@
     <h1 class="text-nb-yellow text-right">our services</h1>
     {% for service in entry.services.all() %}
     {% set icon = entry.services.one().serviceIcon.one() %}
-    {% set serviceName = entry.services.one().title() %}
     <div class="w-1/3 p-2 flex flex-col justify-end">
       <img src="{{ icon.url() }}" alt="">
-      <h4 class="text-nb-yellow">{{ serviceName }}</h4>
+      <h4 class="text-nb-yellow">{{ service.title }}</h4>
     </div>
     {% endfor %}
   </div>
