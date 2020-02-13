@@ -1,8 +1,8 @@
 {% block featuredWork %}
-{% set image1 = entry.featuredWork.nth(1).projectThumbnail.one() %}
-{% set image2 = entry.featuredWork.nth(2).projectThumbnail.one() %}
-{% set image3 = entry.featuredWork.nth(3).projectThumbnail.one() %}
-{% set image4 = entry.featuredWork.nth(4).projectThumbnail.one() %}
+{% set image1 = entry.featuredWork.nth(0).projectThumbnail.one() %}
+{% set image2 = entry.featuredWork.nth(1).projectThumbnail.one() %}
+{% set image3 = entry.featuredWork.nth(2).projectThumbnail.one() %}
+{% set image4 = entry.featuredWork.nth(3).projectThumbnail.one() %}
 
 <div class="flex flex-grow shadow-wrap h-full -mt-24 justify-center">
   <div class="flex-grow top-sloped nb-pink-gradient w-full text-nb-dark-blue h-screen">
