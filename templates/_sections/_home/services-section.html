@@ -4,13 +4,15 @@
   </div>
   <div class="text-right p-8 absolute">
     <h1 class="text-nb-yellow text-right">our services</h1>
+    <div class="flex flex-row flex-wrap justify-end">
     {% for service in entry.services.all() %}
     {% set icon = entry.services.one().serviceIcon.one() %}
     <div class="w-1/3 p-2 flex flex-col justify-center ">
-      <img src="{{ icon.url() }}" alt="">
+      <img src="{{ icon.url() }}" alt="" class="shadow-xl">
       <h4 class="text-nb-yellow mt-4">{{ service.title }}</h4>
     </div>
     {% endfor %}
   </div>
+      </div>
 </div>
 {% endblock %}
