@@ -4,9 +4,9 @@
   </div>
   <div class="text-right p-8 absolute">
     <h1 class="text-nb-yellow text-right">our services</h1>
-    {% for services in entry.services.all() %}
+    {% for service in entry.services.all() %}
     {% set icon = entry.services.serviceIcon.one() %}
-    {% set serviceName = entry.services.title.one() %}
+    {% set serviceName = entry.services.title() %}
     <div class="w-1/3 p-2 flex flex-col justify-end">
       <img src="{{ icon.url() }}" alt="">
       <h4 class="text-nb-yellow">{{ serviceName }}</h4>
