@@ -1,8 +1,8 @@
 {% block featuredWork %}
-{% set image1 = entry.featuredWork.first().projectThumbnail.one() %}
-{% set image2 = entry.featuredWork.id(2).projectThumbnail.one() %}
-{% set image3 = entry.featuredWork.id(3).projectThumbnail.one() %}
-{% set image4 = entry.featuredWork.id(4).projectThumbnail.one() %}
+{% set image1 = entry.featuredWork.first().projectThumbnail.nth(1) %}
+{% set image2 = entry.featuredWork.first().projectThumbnail.nth(2) %}
+{% set image3 = entry.featuredWork.first().projectThumbnail.nth(3) %}
+{% set image4 = entry.featuredWork.first().projectThumbnail.nth(4) %}
 
 <div class="flex flex-grow shadow-wrap h-full -mt-24 justify-center">
   <div class="flex-grow top-sloped nb-pink-gradient w-full text-nb-dark-blue h-screen">
@@ -12,13 +12,13 @@
       <img src="{{ image1.url() }}" alt="" class="w-full h-auto">
     </div>
     <div id="featuredWork-2" class="w-2/3 mx-2">
-      <img src="" alt="" class="w-full h-auto">
+      <img src="{{ image2.url() }}" alt="" class="w-full h-auto">
     </div>
     <div id="featuredWork-3" class="w-2/5 mx-2">
-      <img src="" alt="" class="w-full h-auto">
+      <img src="{{ image3.url() }}" alt="" class="w-full h-auto">
     </div>
     <div id="featuredWork-4" class="w-2/5 mx-2">
-      <img src="" alt="" class="w-full h-auto">
+      <img src="{{ image4.url() }}" alt="" class="w-full h-auto">
     </div>
     <button type="button" name="seeMoreWork">
       <h4>See More of Our Work!</h4>
