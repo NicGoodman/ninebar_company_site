@@ -8,9 +8,9 @@
     {% set icon = entry.services.serviceIcon.one() %}
     {% set serviceName = entry.services.title.one() %}
     <div class="w-1/3 p-2 flex flex-col justify-end">
-    <img src="{{ icon.url() }}" alt="">
-    <h4 class="text-nb-yellow">{{ serviceName }}</h4>
-        </div>
+      <img src="{{ icon.url() }}" alt="">
+      <h4 class="text-nb-yellow">{{ serviceName }}</h4>
+    </div>
     {% endfor %}
   </div>
 </div>
