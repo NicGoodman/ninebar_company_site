@@ -41,21 +41,13 @@
 	    });
 	});
 	function updateContainer() {
-	var divHeightIntro = $('.intro').outerHeight(function (index, outerHeight) {
-    return (outerHeight + 100);
-});
+	var divHeightIntro = $('.intro').outerHeight();
 	$('.introBG').css('min-height', divHeightIntro+'px');
-	var divHeightContent1 = $('.content1').outerHeight(function (index, outerHeight) {
-    return (outerHeight + 100);
-});
+	var divHeightContent1 = $('.content1').outerHeight();
 	$('.content1BG').css('min-height', divHeightContent1+'px');
-	var divHeightContent2 = $('.content2').outerHeight(function (index, outerHeight) {
-    return (outerHeight + 100);
-});
+	var divHeightContent2 = $('.content2').outerHeight();
 	$('.content2BG').css('min-height', divHeightContent2+'px');
-	var divHeightFooter = $('.footer').outerHeight(function (index, outerHeight) {
-    return (outerHeight + 100);
-});
+	var divHeightFooter = $('.footer').outerHeight();
 	$('.footerBG').css('min-height', divHeightFooter+'px');
 	};
 	</script>
