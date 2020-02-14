@@ -1,4 +1,24 @@
 {% extends "_layouts/base-layout" %}
+{% block headerScripts %}
+<script>
+$(document).ready(function () {
+    updateContainer();
+    $(window).resize(function() {
+        updateContainer();
+    });
+});
+function updateContainer() {
+var divHeightIntro = $('.gradientContentIntro').height();
+$('.gradientBGIntro').css('min-height', divHeightIntro+'px');
+var divHeightFeaturedWork = $('.gradientContentFeaturedWork').height();
+$('.gradientBGFeaturedWork').css('min-height', divHeightFeaturedWork+'px');
+var divHeightServices = $('.gradientContentServices').height();
+$('.gradientBGServices').css('min-height', divHeightServices+'px');
+ar divHeightFooter = $('.gradientContentFooter').height();
+$('.gradientBGFooter').css('min-height', divHeightFooter+'px');
+};
+</script>
+{% endblock %}
 {% block body %}
 <main>
   <nav id="mainNav" class="flex flex-col h-screen w-screen nb-light-blue-gradient hidden">
