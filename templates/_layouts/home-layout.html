@@ -1,24 +1,4 @@
 {% extends "_layouts/base-layout" %}
-{% block headerScripts %}
-<script>
-$(document).ready(function () {
-    updateContainer();
-    $(window).resize(function() {
-        updateContainer();
-    });
-});
-function updateContainer() {
-var divHeightIntro = $('.gradientContentIntro').height();
-$('.gradientBGIntro').css('min-height', divHeightIntro+'px');
-var divHeightFeaturedWork = $('.gradientContentFeaturedWork').height();
-$('.gradientBGFeaturedWork').css('min-height', divHeightFeaturedWork+'px');
-var divHeightServices = $('.gradientContentServices').height();
-$('.gradientBGServices').css('min-height', divHeightServices+'px');
-ar divHeightFooter = $('.gradientContentFooter').height();
-$('.gradientBGFooter').css('min-height', divHeightFooter+'px');
-};
-</script>
-{% endblock %}
 {% block body %}
 <main>
   <nav id="mainNav" class="flex flex-col h-screen w-screen nb-light-blue-gradient hidden">
@@ -27,8 +7,8 @@ $('.gradientBGFooter').css('min-height', divHeightFooter+'px');
     {% endblock %}
   </nav>
   <section>
-    <div class="gradientBGIntro flex flex-col nb-light-blue-gradient">
-      <div class="gradientContentIntro">
+    <div class="introBG flex flex-col nb-light-blue-gradient">
+      <div class="intro">
         <header class="px-4 my-4 md:px-8 md:mt-8 md:mb-24">
           {% include "_sections/_general/header-section" %}
           {% block header %}

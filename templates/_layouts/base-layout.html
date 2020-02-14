@@ -34,9 +34,25 @@
 		}
 		$('#heroText').hangPunctuation();
 	</script>
-	
-	{% block headerScripts %}
-	{% endblock %}
+	<script>
+	$(document).ready(function () {
+	    updateContainer();
+	    $(window).resize(function() {
+	        updateContainer();
+	    });
+	});
+	function updateContainer() {
+	var divHeightIntro = $('.intro').height();
+	$('.introBG').css('min-height', divHeightIntro+'px');
+	var divHeightContent1 = $('.content1').height();
+	$('.content1BG').css('min-height', divHeightContent1+'px');
+	var divHeightContent2 = $('.content2').height();
+	$('.content2BG').css('min-height', divHeightContent2+'px');
+	ar divHeightFooter = $('.footer').height();
+	$('.footerBG').css('min-height', divHeightFooter+'px');
+	};
+	</script>
+
 </head>
 
 <body class="bg-nb-light-blue">
