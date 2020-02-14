@@ -36,7 +36,13 @@
 	</script>
 
 	<script>
-	$(window).on('resize', function(){
+	$(document).ready(function () {
+	    updateContainer();
+	    $(window).resize(function() {
+	        updateContainer();
+	    });
+	});
+	function updateContainer() {
 	var divHeight = $('.gradientContentIntro').height();
 	$('.gradientBGIntro').css('min-height', divHeight+'px');
 	var divHeight = $('.gradientContentFeaturedWork').height();
