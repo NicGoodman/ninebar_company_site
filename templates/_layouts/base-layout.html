@@ -57,12 +57,14 @@
 
 })();
 
+$(window).on('resize', function(){
 var divHeight = $('.gradientContentIntro').height();
 $('.gradientBGIntro').css('min-height', divHeight+'px');
 var divHeight = $('.gradientContentFeaturedWork').height();
 $('.gradientBGFeaturedWork').css('min-height', divHeight+'px');
 var divHeight = $('.gradientContentServices').height();
 $('.gradientBGServices').css('min-height', divHeight+'px');
+});
 	</script>
 </body>
 
