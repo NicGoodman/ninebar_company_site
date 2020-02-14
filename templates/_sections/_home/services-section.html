@@ -3,7 +3,7 @@
   <div class="gradientBGServices flex-grow opposite-sloped nb-dark-blue-gradient w-full text-nb-dark-blue">
   </div>
   <div class="gradientContentServices text-right p-8 absolute mt-24 max-w-screen-xl w-full">
-    <h1 class="text-nb-yellow text-right">our services</h1>
+    <h1 class="text-nb-yellow text-right mb-8">our services</h1>
     <div class="flex flex-col md:flex-row flex-wrap justify-end">
     {% for service in entry.services.all() %}
     {% set icon = service.serviceIcon.one() %}
