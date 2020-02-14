@@ -8,8 +8,8 @@
     {% for service in entry.services.all() %}
     {% set icon = service.serviceIcon.one() %}
     <div class="w-full md:w-1/3 flex flex-col items-center text-center justify-end">
-      <div class="shadow-wrap">
-      <img src="{{ icon.url() }}" alt="" class="w-4/5 h-full">
+      <div class="shadow-wrap items-center">
+      <img src="{{ icon.url() }}" alt="" class="w-4/5 h-full self-">
       </div>
       <h4 class="text-nb-yellow mt-4">{{ service.title }}</h4>
     </div>
