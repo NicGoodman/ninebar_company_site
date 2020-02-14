@@ -14648,6 +14648,10 @@ button:hover {
           filter: drop-shadow(10px 10px 33px rgba(0, 42, 78, 0.33));
 }
 
+.featuredWorkThumbnail:hover img {
+  visibility: hidden;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;
