@@ -14660,8 +14660,6 @@ button:hover {
   background-attachment: scroll;
   border-radius: 0.25rem;
   position: relative;
-  display: flex;
-  flex-direction: column-reverse;
 }
 
 .Thumbnail-Image {
@@ -14677,12 +14675,15 @@ button:hover {
 
 .Thumbnail-Caption {
   width: 100%;
+  bottom: 0;
   text-align: left;
-  color: rgb(232,154,27);
+  color: #ffcb58;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   padding: 0.75rem;
+  z-index: -100;
+  position: absolute;
 }
 
 .Thumbnail-Wrapper:hover {
