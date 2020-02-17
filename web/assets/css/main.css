@@ -14652,7 +14652,6 @@ button:hover {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
-  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
   border-radius: 0.25rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   width: 100%;
@@ -14665,7 +14664,6 @@ button:hover {
 
 .Thumbnail-Image {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transform: translateX(var(--transform-translate-x)) translateY(var(--transform-translate-y)) rotate(var(--transform-rotate)) skewX(var(--transform-skew-x)) skewY(var(--transform-skew-y)) scaleX(var(--transform-scale-x)) scaleY(var(--transform-scale-y));
   opacity: 1;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -14674,8 +14672,7 @@ button:hover {
 }
 
 .Thumbnail-Wrapper:hover {
-  --transform-scale-x: .95;
-  --transform-scale-y: .95;
+  transform: scale(0.95);
 }
 
 .Thumbnail-Image:hover {
