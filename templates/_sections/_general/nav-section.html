@@ -9,7 +9,7 @@
 <ul>
   {% set pages = craft.entries.section('pages').all() %}
   {% for page in pages %}
-    <li><h1 class="hover:text-nb-light-blue shadow-wrap">{{  }}</h1></li>
+    <li><h1 class="hover:text-nb-light-blue shadow-wrap">{{ page.pageTemplate.url() }}</h1></li>
   {% endfor %}
 </ul>
 </div>
