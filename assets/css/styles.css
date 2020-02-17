@@ -269,6 +269,6 @@ transform: scale(0.95);
   opacity: 0;
 }
 
-.Thumbnail-Caption:hover {
+.Thumbnail-Caption-Visible {
   opacity: 1
 }

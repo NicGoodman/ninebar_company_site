@@ -14697,7 +14697,7 @@ button:hover {
   opacity: 0;
 }
 
-.Thumbnail-Caption:hover {
+.Thumbnail-Caption-Visible {
   opacity: 1
 }
 
