@@ -14648,6 +14648,18 @@ button:hover {
           filter: drop-shadow(10px 10px 33px rgba(0, 42, 78, 0.33));
 }
 
+.Thumbnail-Wrapper:hover {
+  transform: scale(0.95);
+}
+
+.Thumbnail-Wrapper:hover + .Thumbnail-Caption {
+  display: block;
+}
+
+.Thumbnail-Image:hover {
+  opacity: 0;
+}
+
 .Thumbnail-Wrapper {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -14660,6 +14672,7 @@ button:hover {
   background-attachment: scroll;
   border-radius: 0.25rem;
   position: relative;
+  display: block;
 }
 
 .Thumbnail-Image {
@@ -14687,18 +14700,6 @@ button:hover {
   transition-duration: 300ms;
   padding: 0.75rem;
   display: none;
-}
-
-.Thumbnail-Wrapper:hover {
-  transform: scale(0.95);
-}
-
-.Thumbnail-Wrapper:hover + .Thumbnail-Caption {
-  display: block;
-}
-
-.Thumbnail-Image:hover {
-  opacity: 0;
 }
 
 @media (min-width: 640px) {
