@@ -14652,8 +14652,6 @@ button:hover {
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
-  border-radius: 0.25rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   width: 100%;
   height: auto;
   background: rgb(101,158,200);
@@ -14669,6 +14667,8 @@ button:hover {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   height: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .Thumbnail-Wrapper:hover {
