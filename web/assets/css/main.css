@@ -14680,25 +14680,25 @@ button:hover {
   height: 100%;
   text-align: left;
   vertical-align: bottom;
-  opacity: 0;
   color: rgb(232,154,27);
   position: absolute;
   transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   padding: 0.75rem;
+  display: none;
 }
 
 .Thumbnail-Wrapper:hover {
   transform: scale(0.95);
 }
 
-.Thumbnail-Image:hover {
-  opacity: 0;
+.Thumbnail-Wrapper:hover + .Thumbnail-Caption {
+  display: block;
 }
 
-.Thumbnail-Caption-Visible {
-  opacity: 1
+.Thumbnail-Image:hover {
+  opacity: 0;
 }
 
 @media (min-width: 640px) {
