@@ -23,19 +23,14 @@
     </div>
   </section>
   <section>
-    {% include "_sections/_home/featuredWork-section" %}
+    {% include "_sections/_projects/projectGrid-section" %}
     {% block featuredWork %}
-    {% endblock %}
-  </section>
-  <section>
-    {% include "_sections/_home/services-section" %}
-    {% block services %}
     {% endblock %}
   </section>
 </main>
 <footer>
-  {% include "_sections/_home/footerWithForm-section" %}
-  {% block footerWithForm %}
+  {% include "_sections/_general/footer-section" %}
+  {% block footer %}
   {% endblock %}
 </footer>
 {% endblock %}
