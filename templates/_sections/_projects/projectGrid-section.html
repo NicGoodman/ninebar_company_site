@@ -2,7 +2,7 @@
 <div class="flex flex-grow shadow-wrap h-full -mt-24 justify-center z-40 relative">
   <div class="content1BG flex-grow opposite-sloped nb-yellow-gradient w-full text-nb-dark-blue" style="transform: scaleX(-1);">
   </div>
-  <div class="content1 flex flex-col max-w-screen-xl -mt-24 absolute justify-center w-full px-2 md:px-4 lg:px-8 xl:px-0">
+  <div class="content1 flex flex-col max-w-screen-xl -mt-24 absolute justify-center w-full px-4 md:px-8">
     <h1 class="text-nb-light-blue text-right mt-24 w-full">our work</h1>
     <div class="grid max-w-screen-xl" data-packery='{ "itemSelector": ".grid-item", "gutter": 10, "originLeft": false }'>
       {% for project in craft.entries().section('projects').all() %}
