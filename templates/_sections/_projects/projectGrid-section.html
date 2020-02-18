@@ -6,7 +6,7 @@
     <h1 class="text-nb-light-blue text-right mt-24 w-full">our work</h1>
       <div class="grid max-w-screen-xl" data-packery='{ "itemSelector": ".grid-item", "gutter": 10}'>
         {% for project in craft.entries().section('projects').all() %}
-          {% for block in project.projectThumbnail.one() %}
+          {% for block in project.projectThumbnail.all() %}
             {% set projectThumbnail = block.image.one() %}
             {% set thumbnailSize = block.size %}
           {% endfor %}
