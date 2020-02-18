@@ -14694,6 +14694,12 @@ button:hover {
   opacity: 0;
 }
 
+.grid-item { width: 25%;
+}
+
+.grid-item--width2 { width: 50%;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

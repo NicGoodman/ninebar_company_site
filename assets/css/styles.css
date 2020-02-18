@@ -265,3 +265,6 @@ transform: scale(0.95);
 .Thumbnail-Image:hover {
   opacity: 0;
 }
+
+.grid-item { width: 25%; }
+.grid-item--width2 { width: 50%; }
