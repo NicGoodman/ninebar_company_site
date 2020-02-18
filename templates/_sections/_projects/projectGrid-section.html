@@ -3,7 +3,7 @@
   <div class="content1BG flex-grow opposite-sloped nb-yellow-gradient w-full text-nb-dark-blue" style="transform: scaleX(-1);">
   </div>
   <div class="content1 flex flex-col md:flex-row flex-wrap max-w-screen-xl -mt-24 absolute justify-center p-8">
-    <h1 class="text-nb-light-blue text-right mb-8">our services</h1>
+    <h1 class="text-nb-light-blue text-right mb-8 w-full">our services</h1>
       <div class="grid">
         {% for project in craft.entries().section('projects').all() %}
         {% set projectThumbnail = project.projectThumbnail.one() %}
@@ -11,7 +11,7 @@
         {% set projectTitle = project.title %}
         {% set projectSubtitle = project.title %}
         <div class="grid-item">
-          <div class="Thumbnail-Wrapper grid-item">
+          <div class="Thumbnail-Wrapper">
             <a href="{{ projectLink }}">
               <div class="Thumbnail-Caption">
                 <h4 class="Thumbnail-Title">
