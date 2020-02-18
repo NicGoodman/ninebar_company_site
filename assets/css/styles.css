@@ -278,16 +278,10 @@ transform: scale(0.95);
   height: 200px;
 }
 
-.grid-item-tall {
-  float: left;
-  width: 200px;
-  height: 300px;
-}
-
 .grid-item--width2 {
   width: 600px;
 }
 
 .grid-item--height2 {
-  height: 600px;
+  height: 400px;
 }
