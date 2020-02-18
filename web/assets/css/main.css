@@ -14706,6 +14706,12 @@ button:hover {
   height: 200px;
 }
 
+.grid-item--tall {
+  float: left;
+  width: 266.67px;
+  height: 400px;
+}
+
 .grid-item--width2 {
   width: 600px;
 }
