@@ -14703,7 +14703,7 @@ button:hover {
 }
 
 .grid-item {
-  float: right;
+  float: left;
   width: 300px;
   height: 200px;
 }
