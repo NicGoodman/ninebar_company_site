@@ -14660,6 +14660,7 @@ button:hover {
   background-attachment: scroll;
   border-radius: 0.25rem;
   position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .Thumbnail-Image {
@@ -14670,7 +14671,6 @@ button:hover {
   width: 100%;
   height: auto;
   border-radius: 0.25rem;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .Thumbnail-Caption {
@@ -14694,10 +14694,30 @@ button:hover {
   opacity: 0;
 }
 
-.grid-item { width: 25%;
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
-.grid-item--width2 { width: 50%;
+.grid-item {
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+
+.grid-item-tall {
+  float: left;
+  width: 200px;
+  height: 300px;
+}
+
+.grid-item--width2 {
+  width: 600px;
+}
+
+.grid-item--height2 {
+  height: 600px;
 }
 
 @media (min-width: 640px) {
