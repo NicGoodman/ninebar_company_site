@@ -14649,7 +14649,7 @@ button:hover {
 }
 
 .Thumbnail-Wrapper {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
   width: 100%;
@@ -14664,7 +14664,7 @@ button:hover {
 }
 
 .Thumbnail-Image {
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition: opacity;
   opacity: 1;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -14680,9 +14680,6 @@ button:hover {
   bottom: 0;
   text-align: left;
   color: #ffcb58;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
   padding: 0.75rem;
   z-index: -100;
   position: absolute;
