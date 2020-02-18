@@ -14708,16 +14708,16 @@ button:hover {
 
 .grid-item--tall {
   float: left;
-  width: 273.33px;
+  width: 300px;
   height: 410px;
 }
 
 .grid-item--width2 {
-  max-width: 600px;
+  max-width: 610px;
 }
 
 .grid-item--height2 {
-  height: 400px;
+  height: 410px;
 }
 
 @media (min-width: 640px) {
