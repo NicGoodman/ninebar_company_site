@@ -14714,7 +14714,13 @@ button:hover {
 }
 
 .grid-item--largeLandscape {
-  max-width: 610px;
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+  .grid-item--largeLandscape {
+    width: 610px;
+  }
 }
 
 @media (min-width: 640px) {
