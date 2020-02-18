@@ -5,7 +5,7 @@
   <div class="content1 flex flex-col md:flex-row flex-wrap max-w-screen-xl -mt-24 absolute justify-center p-8">
     <h1 class="text-nb-light-blue text-right mb-8">our services</h1>
       <div class="grid">
-        {% for project in craft.entries.section('projects').all() %}
+        {% for project in craft.entries().section('projects').all() %}
         {% set projectThumbnail = project.projectThumbnail.one() %}
         {% set projectLink = project.url() %}
         {% set projectTitle = project.title %}
