@@ -14706,11 +14706,6 @@ button:hover {
   height: 200px;
 }
 
-.grid-item--landscape {
-  width: 300px;
-  height: 200px;
-}
-
 .grid-item--portrait {
   width: 300px;
   height: 410px;
