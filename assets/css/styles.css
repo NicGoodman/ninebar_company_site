@@ -280,12 +280,12 @@ transform: scale(0.95);
 
 .grid-item--tall {
   float: left;
-  width: 266.67px;
-  height: 400px;
+  width: 273.33px;
+  height: 410px;
 }
 
 .grid-item--width2 {
-  width: 600px;
+  max-width: 600px;
 }
 
 .grid-item--height2 {
