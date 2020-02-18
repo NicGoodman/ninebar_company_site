@@ -10,7 +10,7 @@
   {% set pages = craft.entries.section('pages').all() %}
   {% for page in pages %}
   {% set pageLink = craft.entries.id(page.pageTemplate) %}
-    <li><h1 class="hover:text-nb-light-blue shadow-wrap">{{ pageLink.url() }}</h1></li>
+    <li><h1 class="hover:text-nb-light-blue shadow-wrap">{{ pageLink.url }}</h1></li>
   {% endfor %}
 </ul>
 </div>
