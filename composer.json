@@ -1,6 +1,5 @@
 {
   "require": {
-    "charliedev/section-field": "^1.1",
     "craftcms/cms": "^3.0.0",
     "craftcms/contact-form": "^2.2",
     "craftcms/feed-me": "4.2.0.1",
@@ -8,6 +7,7 @@
     "nystudio107/craft-imageoptimize": "^1.6",
     "nystudio107/craft-seomatic": "^3.2",
     "rias/craft-colour-swatches": "^1.2",
+    "superbig/craft3-templateselect": "^2.0",
     "vlucas/phpdotenv": "^2.4.0"
   },
   "autoload": {
