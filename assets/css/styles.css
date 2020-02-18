@@ -275,22 +275,22 @@ transform: scale(0.95);
 
 .grid-item {
   float: left;
-  width: 300px;
+  width: 296.5px;
   height: 200px;
 }
 
 .grid-item--portrait {
-  width: 300px;
+  width: 296.5px;
   height: 410px;
 }
 
 .grid-item--largeLandscape {
-  width: 300px;
+  width: 296.5px;
 }
 
 @media (min-width: 768px) {
 .grid-item--largeLandscape {
-  width: 610px;
+  width: 593px;
   height: 410px;
 }
 }
