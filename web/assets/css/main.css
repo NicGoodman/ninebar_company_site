@@ -14720,6 +14720,7 @@ button:hover {
 @media (min-width: 768px) {
   .grid-item--largeLandscape {
     width: 610px;
+    height: 410px;
   }
 }
 
