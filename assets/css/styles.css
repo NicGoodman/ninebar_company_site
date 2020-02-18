@@ -272,19 +272,20 @@ transform: scale(0.95);
   clear: both;
 }
 
-.grid-item--landscape {
+.grid-item {
   float: left;
+}
+
+.grid-item--landscape {
   width: 300px;
   height: 200px;
 }
 
 .grid-item--portrait {
-  float: left;
   width: 300px;
   height: 410px;
 }
 
 .grid-item--largeLandscape {
-  float: left;
   max-width: 610px;
 }
