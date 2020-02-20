@@ -291,7 +291,7 @@ transform: scale(0.95);
 
 @media (min-width: 768px) {
 .grid-item--largeLandscape {
-  width: 593px;
+  width: 603px;
   height: 410px;
 }
 }
