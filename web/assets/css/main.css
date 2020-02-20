@@ -14700,34 +14700,16 @@ button:hover {
   float: left;
   width: 100%;
   height: auto;
-  transform:translate3d(0,0,0);
-  transition: transform .3s ease-in-out;
-}
-
-.grid-item:hover {
-  transform: scale(0.95);
 }
 
 .grid-item--portrait {
   width: 100%;
   height: auto;
-  transform:translate3d(0,0,0);
-  transition: transform .3s ease-in-out;
-}
-
-.grid-item--portrait:hover {
-  transform: scale(0.95);
 }
 
 .grid-item--largeLandscape {
   width: 100%;
   height: auto;
-  transform:translate3d(0,0,0);
-  transition: transform .3s ease-in-out;
-}
-
-.grid-item--largeLandscape:hover {
-  transform: scale(0.95);
 }
 
 @media (min-width: 526px) {
