@@ -291,10 +291,6 @@ transform: scale(0.95);
 }
 
 @media (min-width: 768px) {
-.grid-item--largeLandscape {
-  width: 526px;
-  height: 354px;
-}
 .grid-item {
   float: left;
   width: 258px;
@@ -303,6 +299,10 @@ transform: scale(0.95);
 
 .grid-item--portrait {
   width: 258px;
+  height: 354px;
+}
+.grid-item--largeLandscape {
+  width: 526px;
   height: 354px;
 }
 }
