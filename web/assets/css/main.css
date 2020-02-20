@@ -14654,8 +14654,6 @@ button:hover {
 }
 
 .Thumbnail-Wrapper {
-  transform:translate3d(0,0,0);
-  transition: transform .3s ease-in-out;
   width: 100%;
   height: 100%;
   background: rgb(101,158,200);
@@ -14688,10 +14686,6 @@ button:hover {
   position: absolute;
 }
 
-.Thumbnail-Wrapper:hover {
-  transform: scale(0.95);
-}
-
 .Thumbnail-Image:hover {
   opacity: 0;
 }
@@ -14706,19 +14700,37 @@ button:hover {
   float: left;
   width: 100%;
   height: auto;
+  transform:translate3d(0,0,0);
+  transition: transform .3s ease-in-out;
+}
+
+.grid-item:hover {
+  transform: scale(0.95);
 }
 
 .grid-item--portrait {
   width: 100%;
   height: auto;
+  transform:translate3d(0,0,0);
+  transition: transform .3s ease-in-out;
+}
+
+.grid-item--portrait:hover {
+  transform: scale(0.95);
 }
 
 .grid-item--largeLandscape {
   width: 100%;
   height: auto;
+  transform:translate3d(0,0,0);
+  transition: transform .3s ease-in-out;
 }
 
-@media (min-width: 768px) {
+.grid-item--largeLandscape:hover {
+  transform: scale(0.95);
+}
+
+@media (min-width: 526px) {
   .grid-item {
     float: left;
     width: 258px;
