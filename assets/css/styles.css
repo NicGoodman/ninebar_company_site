@@ -276,22 +276,30 @@ transform: scale(0.95);
 
 .grid-item {
   float: left;
+  width: 100%;
+}
+
+.grid-item--portrait {
+  width: 100%;
+}
+
+.grid-item--largeLandscape {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+.grid-item--largeLandscape {
+  width: 526px;
+  height: 354px;
+}
+.grid-item {
+  float: left;
   width: 258px;
   height: 172px;
 }
 
 .grid-item--portrait {
   width: 258px;
-  height: 354px;
-}
-
-.grid-item--largeLandscape {
-  width: 258px;
-}
-
-@media (min-width: 768px) {
-.grid-item--largeLandscape {
-  width: 526px;
   height: 354px;
 }
 }

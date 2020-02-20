@@ -14706,22 +14706,31 @@ button:hover {
 
 .grid-item {
   float: left;
-  width: 258px;
-  height: 172px;
+  width: 100%;
 }
 
 .grid-item--portrait {
-  width: 258px;
-  height: 354px;
+  width: 100%;
 }
 
 .grid-item--largeLandscape {
-  width: 258px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .grid-item--largeLandscape {
     width: 526px;
+    height: 354px;
+  }
+
+  .grid-item {
+    float: left;
+    width: 258px;
+    height: 172px;
+  }
+
+  .grid-item--portrait {
+    width: 258px;
     height: 354px;
   }
 }
