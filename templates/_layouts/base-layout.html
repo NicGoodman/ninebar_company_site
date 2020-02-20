@@ -57,10 +57,10 @@
 	$(document).ready(function(){
     $('.Thumbnail-Wrapper').hover(function() {
         $(this).animate({
-          effect: "scale",
-          percent: "95%"
-        },300);
-    });
+					height: ($(this).height()*0.95),
+			    width: ($(this).width()*0.95)
+			}, 300);
+    });		
 });
 	</script>
 
