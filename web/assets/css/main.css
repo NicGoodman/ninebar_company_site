@@ -14707,14 +14707,17 @@ button:hover {
 .grid-item {
   float: left;
   width: 100%;
+  height: auto;
 }
 
 .grid-item--portrait {
   width: 100%;
+  height: auto;
 }
 
 .grid-item--largeLandscape {
   width: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px) {
