@@ -14712,16 +14712,28 @@ button:hover {
   float: left;
   width: 100%;
   height: auto;
+  transform:translate3d(0,0,0);
+  transition: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .grid-item--portrait {
   width: 100%;
   height: auto;
+  transform:translate3d(0,0,0);
+  transition: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 .grid-item--largeLandscape {
   width: 100%;
   height: auto;
+  transform:translate3d(0,0,0);
+  transition: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }
 
 @media (min-width: 768px) {
@@ -14729,16 +14741,28 @@ button:hover {
     float: left;
     width: 258px;
     height: 172px;
+    transform:translate3d(0,0,0);
+    transition: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
   }
 
   .grid-item--portrait {
     width: 258px;
     height: 354px;
+    transform:translate3d(0,0,0);
+    transition: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
   }
 
   .grid-item--largeLandscape {
     width: 526px;
     height: 354px;
+    transform:translate3d(0,0,0);
+    transition: transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
   }
 }
 
