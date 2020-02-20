@@ -53,6 +53,18 @@
 	};
 	</script>
 
+	<script type="text/javascript">
+	$(window).scroll(function() {
+
+	if ($(this).scrollTop() > 50){
+			$('#pageHeader').addClass("shadow-wrap-header");
+	}
+	else{
+			$('#pageHeader').removeClass("shadow-wrap-header");
+	}
+});
+	</script>
+
 </head>
 
 <body class="bg-nb-light-blue">
