@@ -55,16 +55,18 @@
 
 	<script>
 	$(document).ready(function(){
-    $('.Thumbnail-Wrapper').hover(function() {
+    $('.Thumbnail-Wrapper').mouseenter(function() {
         $(this).animate({
 					height: ($(this).height()*0.95),
 			    width: ($(this).width()*0.95)
 			}, 300);
-			$(this).animate({
-				height: ($(this).height()*1.05),
-				width: ($(this).width()*1.05)
-		}, 300);
     });
+$('.Thumbnail-Wrapper').mouseleave(function() {
+		$(this).animate({
+			height: ($(this).height()*1.05),
+			width: ($(this).width()*1.05)
+	}, 300);
+	});
 });
 	</script>
 
