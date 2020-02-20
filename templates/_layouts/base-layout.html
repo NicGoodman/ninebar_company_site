@@ -56,8 +56,7 @@
 	<script>
 	$(document).ready(function(){
     $('.Thumbnail-Wrapper').hover(function() {
-        $(this).css("cursor", "pointer");
-        $(this).toggle({
+        $(this).animate({
           effect: "scale",
           percent: "100%"
         },300);
