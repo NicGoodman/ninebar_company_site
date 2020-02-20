@@ -14654,6 +14654,7 @@ button:hover {
 }
 
 .Thumbnail-Wrapper {
+  transform:translate3d(0,0,0);
   transition: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 300ms;
@@ -14678,6 +14679,7 @@ button:hover {
   border-radius: 0.25rem;
   -o-object-fit: cover;
      object-fit: cover;
+  transform:translate3d(0,0,0);
 }
 
 .Thumbnail-Caption {
@@ -14692,10 +14694,12 @@ button:hover {
 
 .Thumbnail-Wrapper:hover {
   transform: scale(0.95);
+  transform:translate3d(0,0,0);
 }
 
 .Thumbnail-Image:hover {
   opacity: 0;
+  transform:translate3d(0,0,0);
 }
 
 .grid:after {
