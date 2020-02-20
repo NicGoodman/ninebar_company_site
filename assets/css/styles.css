@@ -270,7 +270,7 @@ button:hover {
   height: auto;
   -webkit-transform:translate3d(0,0,0);
   transform:translate3d(0,0,0);
-  transition: transform .3s ease-in-out;
+
 }
 
 .grid-item:hover {
@@ -286,7 +286,7 @@ transform: scale(0.95);
     height: auto;
     -webkit-transform:translate3d(0,0,0);
     transform:translate3d(0,0,0);
-    transition: transform .3s ease-in-out;
+
 }
 
 .grid-item--portrait:hover {
@@ -302,7 +302,7 @@ transform: scale(0.95);
     height: auto;
     -webkit-transform:translate3d(0,0,0);
     transform:translate3d(0,0,0);
-    transition: transform .3s ease-in-out;
+
 }
 
 .grid-item--largeLandscape:hover {
