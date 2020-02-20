@@ -292,6 +292,6 @@ transform: scale(0.95);
 }
 }
 
-.fa:before {
-    vertical-align: middle;
+#navIcon {
+  height: 32px;
 }

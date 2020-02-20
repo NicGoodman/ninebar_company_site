@@ -14721,8 +14721,8 @@ button:hover {
   }
 }
 
-.fa:before {
-  vertical-align: middle;
+#navIcon {
+  height: 32px;
 }
 
 @media (min-width: 640px) {
