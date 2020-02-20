@@ -291,3 +291,7 @@ transform: scale(0.95);
   height: 410px;
 }
 }
+
+.fa:before {
+    vertical-align: middle;
+}
