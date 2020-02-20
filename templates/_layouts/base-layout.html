@@ -55,18 +55,12 @@
 
 	<script>
 	$(document).ready(function(){
-    $('.Thumbnail-Wrapper').mouseenter(function() {
-        $(this).animate({
-					height: ($(this).height()*0.95),
-			    width: ($(this).width()*0.95)
-			}, 300);
+    $('.Thumbnail-Wrapper').hover(function() {
+        $(this).css({
+					"transition": "transform .3s ease-in-out",
+					"transform": "scale(0.95);"
     });
-$('.Thumbnail-Wrapper').mouseleave(function() {
-		$(this).animate({
-			height: ($(this).height()*1),
-			width: ($(this).width()*1)
-	}, 300);
-	});
+});
 });
 	</script>
 
