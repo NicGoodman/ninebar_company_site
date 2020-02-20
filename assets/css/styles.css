@@ -249,7 +249,6 @@ button:hover {
   text-align: left;
   color: #ffcb58;
   padding: 0.75rem;
-  z-index: -100;
   position: absolute;
 }
 
