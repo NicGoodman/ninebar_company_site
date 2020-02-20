@@ -9,7 +9,7 @@
     <button class="bg-nb-mint text-nb-dark-blue p-2 mx-2"><p class="font-bold text-base">identity & branding</p></button>
     <button class="bg-nb-mint text-nb-dark-blue p-2 ml-2"><p class="font-bold text-base">packaging design</p></button>
     </div>
-    <div class="grid max-w-screen-xl" data-packery='{ "itemSelector": ".grid-item", "gutter": 10, "originLeft": false, "stagger": 30, "transitionDuration": 300,  }'>
+    <div class="grid max-w-screen-xl" data-packery='{ "itemSelector": ".grid-item", "gutter": 10, "originLeft": false, "stagger": 30, "transitionDuration": 300  }'>
       {% for project in craft.entries().section('projects').all() %}
       {% for block in project.projectThumbnail.all() %}
       {% set projectThumbnail = block.image.one() %}
