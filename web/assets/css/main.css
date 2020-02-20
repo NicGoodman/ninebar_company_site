@@ -14655,9 +14655,7 @@ button:hover {
 
 .Thumbnail-Wrapper {
   transform:translate3d(0,0,0);
-  transition: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition: transform .3s ease-in-out;
   width: 100%;
   height: 100%;
   background: rgb(101,158,200);
@@ -14670,10 +14668,8 @@ button:hover {
 }
 
 .Thumbnail-Image {
-  transition: opacity;
+  transition: opacity .3s ease-in-out;
   opacity: 1;
-  transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
   height: 100%;
   border-radius: 0.25rem;
@@ -14694,12 +14690,10 @@ button:hover {
 
 .Thumbnail-Wrapper:hover {
   transform: scale(0.95);
-  transform:translate3d(0,0,0);
 }
 
 .Thumbnail-Image:hover {
   opacity: 0;
-  transform:translate3d(0,0,0);
 }
 
 .grid:after {
@@ -14712,28 +14706,16 @@ button:hover {
   float: left;
   width: 100%;
   height: auto;
-  transform:translate3d(0,0,0);
-  transition: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
 }
 
 .grid-item--portrait {
   width: 100%;
   height: auto;
-  transform:translate3d(0,0,0);
-  transition: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
 }
 
 .grid-item--largeLandscape {
   width: 100%;
   height: auto;
-  transform:translate3d(0,0,0);
-  transition: transform;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
 }
 
 @media (min-width: 768px) {
@@ -14741,28 +14723,16 @@ button:hover {
     float: left;
     width: 258px;
     height: 172px;
-    transform:translate3d(0,0,0);
-    transition: transform;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
   }
 
   .grid-item--portrait {
     width: 258px;
     height: 354px;
-    transform:translate3d(0,0,0);
-    transition: transform;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
   }
 
   .grid-item--largeLandscape {
     width: 526px;
     height: 354px;
-    transform:translate3d(0,0,0);
-    transition: transform;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 300ms;
   }
 }
 
