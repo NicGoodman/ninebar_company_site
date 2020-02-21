@@ -3,14 +3,25 @@
   <div class="content1BG flex-grow opposite-sloped nb-yellow-gradient w-full text-nb-dark-blue" style="transform: scaleX(-1);">
   </div>
   <div class="content1 flex flex-col max-w-screen-xl -mt-24 absolute justify-center w-full pl-4 py-8 pr-20 md:pr-24 md:py-16 md:pl-8">
-    <div class="text-nb-dark-blue text-right mt-24 w-full top-0 z-50 leading-none mb-12"><h1 id="pageHeader" class="mb-4">our work</h1>
+    <div class="text-nb-dark-blue text-right mt-24 w-full top-0 z-50 leading-none mb-12">
+      <h1 id="pageHeader" class="mb-4">our work</h1>
       <div class="button-group filters-button-group revealMe load-hidden">
-      <button class="button is-checked bg-nb-pink text-nb-dark-blue p-2 mx-2 " data-filter="*"><p class="font-bold text-base">all work</p></button>
-    <button class="button bg-nb-pink text-nb-dark-blue p-2 mx-2" data-filter=".web"><p class="font-bold text-base">web design</p></button>
-    <button class="button bg-nb-pink text-nb-dark-blue p-2 mx-2" data-filter=".graphic"><p class="font-bold text-base">graphic design</p></button>
-    <button class="button bg-nb-pink text-nb-dark-blue p-2 mx-2" data-filter=".branding"><p class="font-bold text-base">identity & branding</p></button>
-    <button class="button bg-nb-pink text-nb-dark-blue p-2 ml-2" data-filter=".packaging"><p class="font-bold text-base">packaging design</p></button>
-    </div>
+        <button class="button is-checked bg-nb-pink text-nb-dark-blue p-2 mx-2" data-filter="*">
+          <p class="font-bold text-base">all work</p>
+        </button>
+        <button class="button bg-nb-pink text-nb-dark-blue p-2 mx-2" data-filter=".web">
+          <p class="font-bold text-base">web design</p>
+        </button>
+        <button class="button bg-nb-pink text-nb-dark-blue p-2 mx-2" data-filter=".graphic">
+          <p class="font-bold text-base">graphic design</p>
+        </button>
+        <button class="button bg-nb-pink text-nb-dark-blue p-2 mx-2" data-filter=".branding">
+          <p class="font-bold text-base">identity & branding</p>
+        </button>
+        <button class="button bg-nb-pink text-nb-dark-blue p-2 ml-2" data-filter=".packaging">
+          <p class="font-bold text-base">packaging design</p>
+        </button>
+      </div>
     </div>
     <div class="grid max-w-screen-xl">
       {% for project in craft.entries().section('projects').all() %}
@@ -23,18 +34,18 @@
       {% set projectType = '' %}
       <div class="grid-item {{ thumbnailSize }} {{ projectType }} web">
         <div class="Thumbnail-Wrapper load-hidden revealMe">
-        <a href="{{ projectLink }}">
-          <div class="Thumbnail-Caption">
-            <h4 class="Thumbnail-Title text-lg">
-              {{ projectTitle }}
-            </h4>
-            <h5 class="Thumbnail-subTitle text-base">
-              {{ projectSubtitle }}
-            </h5>
-          </div>
-          <img src="{{ projectThumbnail.url() }}" alt="" class="Thumbnail-Image">
-        </a>
-      </div>
+          <a href="{{ projectLink }}">
+            <div class="Thumbnail-Caption">
+              <h4 class="Thumbnail-Title text-lg">
+                {{ projectTitle }}
+              </h4>
+              <h5 class="Thumbnail-subTitle text-base">
+                {{ projectSubtitle }}
+              </h5>
+            </div>
+            <img src="{{ projectThumbnail.url() }}" alt="" class="Thumbnail-Image">
+          </a>
+        </div>
       </div>
       {% endfor %}
       {% endfor %}
