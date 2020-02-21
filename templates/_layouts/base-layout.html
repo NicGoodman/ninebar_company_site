@@ -13,8 +13,6 @@
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
 	<script src="https://embed.small.chat/T0SLR83ABGSWB1QG05.js" async></script>
-	<link href="{{ siteUrl }}assets/css/hanging-punctuation.css" media="screen" rel="stylesheet" />
-	<script src="{{ siteUrl }}assets/js/hanging-punctuation.js"></script>
 
 	<script>
 		function showNav() {
@@ -35,7 +33,6 @@
 	<script>
 		$(document).ready(function() {
 			updateContainer();
-					$('#heroText').hangPunctuation();
 			$(window).resize(function() {
 				updateContainer();
 			});
@@ -75,6 +72,7 @@ $grid.isotope({ filter: filterValue });
 			divs.eq(i).fadeIn(400)
 				.delay(1000)
 				.fadeOut(400, cycle);
+
 			i = ++i % divs.length;
 		})();
 	</script>
