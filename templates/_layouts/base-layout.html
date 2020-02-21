@@ -31,12 +31,11 @@
 				y.style.overflow = "auto";
 			}
 		}
-
-		$('#heroText').hangPunctuation();
 	</script>
 	<script>
 		$(document).ready(function() {
 			updateContainer();
+					$('#heroText').hangPunctuation();
 			$(window).resize(function() {
 				updateContainer();
 			});
@@ -53,6 +52,17 @@
 			$('.footerBG').css('min-height', divHeightFooter + 'px');
 		};
 	</script>
+	<script type="text/javascript">
+	var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item'
+});
+	$('.filters-button-group').on( 'click', 'button', function() {
+var filterValue = $( this ).attr('data-filter');
+// use filterFn if matches value
+filterValue = filterFns[ filterValue ] || filterValue;
+$grid.isotope({ filter: filterValue });
+});
+	</script>
 
 </head>
 
@@ -65,7 +75,6 @@
 			divs.eq(i).fadeIn(400)
 				.delay(1000)
 				.fadeOut(400, cycle);
-
 			i = ++i % divs.length;
 		})();
 	</script>
