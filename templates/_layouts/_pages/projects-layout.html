@@ -1,7 +1,8 @@
 {% extends "_layouts/base-layout" %}
 {% block body %}
 <main>
-  <nav id="mainNav" class="flex flex-col h-screen w-screen nb-light-blue-gradient hidden">
+  <nav id="mainNav" class="flex flex-col h-screen w-screen nb-light-blue-gradient fixed overflow-scroll z-50 bottom-0" style=
+  "display: none">
     {% include "_sections/_general/nav-section" %}
     {% block nav %}
     {% endblock %}
