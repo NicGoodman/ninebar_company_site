@@ -300,3 +300,7 @@ button:hover {
 #navIcon {
   height: 32px;
 }
+
+html.sr .load-hidden {
+    visibility: hidden;
+}

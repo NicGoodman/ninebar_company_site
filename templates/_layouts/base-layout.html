@@ -9,12 +9,12 @@
 	<link rel="stylesheet" href="https://use.typekit.net/tom5gru.css">
 	<script src="https://unpkg.com/scrollreveal"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://kit.fontawesome.com/5bdd2455c6.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/5bdd2455c6.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	<script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>
 	<script src="https://embed.small.chat/T0SLR83ABGSWB1QG05.js" async></script>
 	<link href="{{ siteUrl }}assets/css/hanging-punctuation.css" media="screen" rel="stylesheet" />
-  <script src="{{ siteUrl }}assets/js/hanging-punctuation.js"></script>
+	<script src="{{ siteUrl }}assets/js/hanging-punctuation.js"></script>
 
 	<script>
 		function showNav() {
@@ -35,22 +35,23 @@
 		$('#heroText').hangPunctuation();
 	</script>
 	<script>
-	$(document).ready(function () {
-	    updateContainer();
-	    $(window).resize(function() {
-	        updateContainer();
-	    });
-	});
-	function updateContainer() {
-	var divHeightIntro = $('.intro').outerHeight();
-	$('.introBG').css('min-height', divHeightIntro+'px');
-	var divHeightContent1 = $('.content1').outerHeight();
-	$('.content1BG').css('min-height', divHeightContent1+'px');
-	var divHeightContent2 = $('.content2').outerHeight();
-	$('.content2BG').css('min-height', divHeightContent2+200+'px');
-	var divHeightFooter = $('.footer').outerHeight();
-	$('.footerBG').css('min-height', divHeightFooter+'px');
-	};
+		$(document).ready(function() {
+			updateContainer();
+			$(window).resize(function() {
+				updateContainer();
+			});
+		});
+
+		function updateContainer() {
+			var divHeightIntro = $('.intro').outerHeight();
+			$('.introBG').css('min-height', divHeightIntro + 'px');
+			var divHeightContent1 = $('.content1').outerHeight();
+			$('.content1BG').css('min-height', divHeightContent1 + 'px');
+			var divHeightContent2 = $('.content2').outerHeight();
+			$('.content2BG').css('min-height', divHeightContent2 + 200 + 'px');
+			var divHeightFooter = $('.footer').outerHeight();
+			$('.footerBG').css('min-height', divHeightFooter + 'px');
+		};
 	</script>
 
 </head>
@@ -58,19 +59,18 @@
 <body class="bg-nb-light-blue">
 	{% block body %}{% endblock %}
 	<script>
-	var divs = $('div[id^="content-"]').hide(),
-	i = 0;
+		var divs = $('div[id^="content-"]').hide(),
+			i = 0;
+		(function cycle() {
+			divs.eq(i).fadeIn(400)
+				.delay(1000)
+				.fadeOut(400, cycle);
 
-(function cycle() {
-
-	divs.eq(i).fadeIn(400)
-						.delay(1000)
-						.fadeOut(400, cycle);
-
-	i = ++i % divs.length;
-
-})();
-
+			i = ++i % divs.length;
+		})();
+	</script>
+	<script type="text/javascript">
+		ScrollReveal().reveal('.Thumbnail-Wrapper');
 	</script>
 </body>
 
