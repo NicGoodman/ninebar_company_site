@@ -69,11 +69,6 @@ button:hover {
   @apply bg-nb-dark-blue;
 }
 
-button:active {
-  @apply text-nb-yellow;
-  @apply bg-nb-dark-blue;
-}
-
 @screen md {
   h1 {
     @apply text-8xl;

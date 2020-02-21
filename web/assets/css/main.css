@@ -674,11 +674,6 @@ button:hover {
   background-color: #002A4E;
 }
 
-button:active {
-  color: #FFCB58;
-  background-color: #002A4E;
-}
-
 @media (min-width: 768px) {
   h1 {
     font-size: 6rem;
