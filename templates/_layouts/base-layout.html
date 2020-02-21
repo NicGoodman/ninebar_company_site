@@ -49,22 +49,6 @@
 			$('.footerBG').css('min-height', divHeightFooter + 'px');
 		};
 	</script>
-	<script type="text/javascript">
-	var $grid = $('.grid').isotope({
-  itemSelector: '.grid-item',
-	layoutMode: 'packery',
-	packery: {
-	gutter: 10
-}
-});
-	$('.filters-button-group').on( 'click', 'button', function() {
-var filterValue = $( this ).attr('data-filter');
-// use filterFn if matches value
-filterValue = filterFns[ filterValue ] || filterValue;
-$grid.isotope({ filter: filterValue });
-});
-	</script>
-
 </head>
 
 <body class="bg-nb-light-blue">
@@ -79,6 +63,21 @@ $grid.isotope({ filter: filterValue });
 
 			i = ++i % divs.length;
 		})();
+	</script>
+	<script type="text/javascript">
+	var $grid = $('.grid').isotope({
+  itemSelector: '.grid-item',
+	layoutMode: 'packery',
+	packery: {
+	gutter: 10
+}
+});
+	$('.filters-button-group').on( 'click', 'button', function() {
+var filterValue = $( this ).attr('data-filter');
+// use filterFn if matches value
+filterValue = filterFns[ filterValue ] || filterValue;
+$grid.isotope({ filter: filterValue });
+});
 	</script>
 	<script type="text/javascript">
 		ScrollReveal().reveal('.Thumbnail-Wrapper');
