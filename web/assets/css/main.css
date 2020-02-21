@@ -14662,6 +14662,7 @@ button:hover {
   border-radius: 0.25rem;
   position: relative;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  transition: transform .3s ease-in-out;
 }
 
 .Thumbnail-Image {
@@ -14686,6 +14687,10 @@ button:hover {
 
 .Thumbnail-Image:hover {
   opacity: 0;
+}
+
+.Thumbnail-Wrapper:hover {
+  transform: scale(0.95);
 }
 
 .grid:after {

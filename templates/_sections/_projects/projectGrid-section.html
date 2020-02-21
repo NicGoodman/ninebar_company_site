@@ -18,7 +18,8 @@
       {% set projectTitle = project.title %}
       {% set projectSubtitle = project.title %}
       {% set projectType = '' %}
-      <div class="Thumbnail-Wrapper grid-item {{ thumbnailSize }} {{ projectType }}">
+      <div class="grid-item {{ thumbnailSize }} {{ projectType }}">
+        <div class="Thumbnail-Wrapper load-hidden">
         <a href="{{ projectLink }}">
           <div class="Thumbnail-Caption">
             <h4 class="Thumbnail-Title text-lg">
@@ -30,6 +31,7 @@
           </div>
           <img src="{{ projectThumbnail.url() }}" alt="" class="Thumbnail-Image">
         </a>
+      </div>
       </div>
       {% endfor %}
       {% endfor %}
