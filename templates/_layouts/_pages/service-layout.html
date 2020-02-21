@@ -1,0 +1,36 @@
+{% extends "_layouts/base-layout" %}
+{% block body %}
+<main>
+  <nav id="mainNav" class="flex flex-col h-screen w-screen nb-light-blue-gradient fixed overflow-scroll z-50 bottom-0" style=
+"display: none">
+    {% include "_sections/_general/nav-section" %}
+    {% block nav %}
+    {% endblock %}
+  </nav>
+  <section>
+    <div class="introBG flex flex-col items-center nb-light-blue-gradient">
+      <header class="px-4 my-4 md:px-8 md:mt-8 md:mb-24 w-full">
+        {% include "_sections/_general/header-section" %}
+        {% block header %}
+        {% endblock %}
+      </header>
+      <div class="intro max-w-screen-xl w-full">
+        <article class="flex flex-col pl-4 md:pl-8 pr-20 md:pr-24 items-end z-40 mb-64">
+        {% include "_sections/_general/intro-section" %}
+        {% block intro %}
+        {% endblock %}
+        </article>
+        </div>
+    </div>
+  </section>
+  <section>
+    {% include "_sections/_services/serviceContent-section" %}
+    {% block featuredWork %}
+    {% endblock %}
+  </section>
+<footer>
+  {% include "_sections/_general/footer-section" %}
+  {% block footerWithForm %}
+  {% endblock %}
+</footer>
+{% endblock %}
