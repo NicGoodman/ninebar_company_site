@@ -1,20 +1,33 @@
 {% block featuredWork %}
-{% set projectThumbnail1 = entry.featuredWork.nth(0).projectThumbnail.image.one() %}
+
+{% set projectThumbnail1 = '' %}
+{% for block in entry.featuredWork.nth(0).projectThumbnail.all() %}
+{% set projectThumbnail1 = block.image.one()%}
+{% endfor %}
 {% set projectLink1 = entry.featuredWork.nth(0).url() %}
 {% set projectTitle1 = entry.featuredWork.nth(0).title %}
 {% set projectSubtitle1 = entry.featuredWork.nth(0).title %}
 
-{% set projectThumbnail2 = entry.featuredWork.nth(1).projectThumbnail.image.one() %}
+{% set projectThumbnail2 = '' %}
+{% for block in entry.featuredWork.nth(1).projectThumbnail.all() %}
+{% set projectThumbnail2 = block.image.one()%}
+{% endfor %}
 {% set projectLink2 = entry.featuredWork.nth(1).url() %}
 {% set projectTitle2 = entry.featuredWork.nth(1).title %}
 {% set projectSubtitle2 = entry.featuredWork.nth(1).title %}
 
-{% set projectThumbnail3 = entry.featuredWork.nth(2).projectThumbnail.image.one() %}
+{% set projectThumbnail3 = '' %}
+{% for block in entry.featuredWork.nth(2).projectThumbnail.all() %}
+{% set projectThumbnail3 = block.image.one()%}
+{% endfor %}
 {% set projectLink3 = entry.featuredWork.nth(2).url() %}
 {% set projectTitle3 = entry.featuredWork.nth(2).title %}
 {% set projectSubtitle3 = entry.featuredWork.nth(2).title %}
 
-{% set projectThumbnail4 = entry.featuredWork.nth(3).projectThumbnail.image.one() %}
+{% set projectThumbnail4 = '' %}
+{% for block in entry.featuredWork.nth(3).projectThumbnail.all() %}
+{% set projectThumbnail4 = block.image.one()%}
+{% endfor %}
 {% set projectLink4 = entry.featuredWork.nth(3).url() %}
 {% set projectTitle4 = entry.featuredWork.nth(3).title %}
 {% set projectSubtitle4 = entry.featuredWork.nth(3).title %}
