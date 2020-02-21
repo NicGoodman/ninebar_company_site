@@ -53,10 +53,12 @@
 	var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
 	layoutMode: 'packery',
+	packery: {
 	gutter: 10,
 	originLeft: false,
 	stagger: 30,
 	transitionDuration: 300
+}
 });
 	$('.filters-button-group').on( 'click', 'button', function() {
 var filterValue = $( this ).attr('data-filter');
