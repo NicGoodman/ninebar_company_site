@@ -134,6 +134,13 @@ button {
   transform:translate3d(0,0,0);
 }
 
+button:hover {
+  --transform-scale-x: .95;
+--transform-scale-y: .95;
+color: #FFCB58;
+background-color: #002A4E;
+}
+
 .button:active,
 .button.is-checked {
   color:#ffcb58;
