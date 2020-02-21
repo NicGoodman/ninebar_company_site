@@ -25,29 +25,29 @@
     </div>
     <div class="grid max-w-screen-xl">
       {% for project in craft.entries().section('projects').all() %}
-      {% for block in project.projectThumbnail.all() %}
-      {% set projectThumbnail = block.image.one() %}
-      {% set thumbnailSize = block.size %}
-      {% set projectLink = project.url() %}
-      {% set projectTitle = project.title %}
-      {% set projectSubtitle = project.title %}
-      {% set projectType = '' %}
-      <div class="grid-item {{ thumbnailSize }} {{ projectType }} web">
-        <div class="Thumbnail-Wrapper load-hidden revealMe">
-          <a href="{{ projectLink }}">
-            <div class="Thumbnail-Caption">
-              <h4 class="Thumbnail-Title text-lg">
-                {{ projectTitle }}
-              </h4>
-              <h5 class="Thumbnail-subTitle text-base">
-                {{ projectSubtitle }}
-              </h5>
-            </div>
-            <img src="{{ projectThumbnail.url() }}" alt="" class="Thumbnail-Image">
-          </a>
+        {% for block in project.projectThumbnail.all() %}
+        {% set projectThumbnail = block.image.one() %}
+        {% set thumbnailSize = block.size %}
+        {% set projectLink = project.url() %}
+        {% set projectTitle = project.title %}
+        {% set projectSubtitle = project.title %}
+        {% set projectType = '' %}
+        <div class="grid-item {{ thumbnailSize }} {{ projectType }} web">
+          <div class="Thumbnail-Wrapper load-hidden revealMe">
+            <a href="{{ projectLink }}">
+              <div class="Thumbnail-Caption">
+                <h4 class="Thumbnail-Title text-lg">
+                  {{ projectTitle }}
+                </h4>
+                <h5 class="Thumbnail-subTitle text-base">
+                  {{ projectSubtitle }}
+                </h5>
+              </div>
+              <img src="{{ projectThumbnail.url() }}" alt="" class="Thumbnail-Image">
+            </a>
+          </div>
         </div>
-      </div>
-      {% endfor %}
+        {% endfor %}
       {% endfor %}
     </div>
   </div>

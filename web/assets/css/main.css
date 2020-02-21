@@ -14562,6 +14562,7 @@ button:active {
 
 button {
   transform:translate3d(0,0,0);
+  transform: translateZ(0);
 }
 
 .is-checked {
@@ -14680,6 +14681,7 @@ button {
   transform:translate3d(0,0,0);
   transition: transform .3s ease-in-out;
   overflow: hidden;
+  transform: translateZ(0);
 }
 
 .Thumbnail-Image {
@@ -14691,6 +14693,7 @@ button {
   -o-object-fit: cover;
      object-fit: cover;
   transform:translate3d(0,0,0);
+  transform: translateZ(0);
 }
 
 .Thumbnail-Caption {
@@ -14708,6 +14711,7 @@ button {
 
 .Thumbnail-Wrapper:hover {
   transform: scale(0.95);
+  transform: translateZ(0);
 }
 
 .grid:after {
