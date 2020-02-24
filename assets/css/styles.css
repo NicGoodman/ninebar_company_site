@@ -57,10 +57,10 @@ button {
   @apply px-6;
   @apply shadow-lg;
   @apply inline-block;
-  @apply transition;
+  @apply transition-colors;
+  @apply transition-transform;
   @apply ease-in-out;
   @apply duration-300;
-  @apply transform;
 }
 
 button:hover {
