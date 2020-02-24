@@ -7,11 +7,11 @@
       <h1 id="pageHeader" class="mb-4">{{ entry.title }}</h1>
     </div>
     <div id="intro-content" class="flex flex-col">
-      {% for block in entry.relatedProjects.projectThumbnail.all() %}
+      {% for block in entry.serviceIntroProject.projectThumbnail.all() %}
         {% set projectThumbnail = block.image.one() %}
-        {% set projectLink = entry.relatedProjects.url() %}
-        {% set projectTitle = entry.relatedProjects.title %}
-        {% set projectSubtitle = entry.relatedProjects.title %}
+        {% set projectLink = entry.serviceIntroProject.url() %}
+        {% set projectTitle = entry.serviceIntroProject.title %}
+        {% set projectSubtitle = entry.serviceIntroProject.title %}
         {% include "_components/_general/projectThumbnail-component" %}
         {% block projectThumbnail %}
         {% endblock %}
@@ -31,7 +31,15 @@
       {% endfor %}
     </div>
     <div id="work-examples" class="flex flex-col md:flex-row">
-
+      {% for block in entry.relatedProjects.projectThumbnail.all() %}
+        {% set projectThumbnail = block.image.one() %}
+        {% set projectLink = entry.relatedProjects.url() %}
+        {% set projectTitle = entry.relatedProjects.title %}
+        {% set projectSubtitle = entry.relatedProjects.title %}
+        {% include "_components/_general/projectThumbnail-component" %}
+        {% block projectThumbnail %}
+        {% endblock %}
+      {% endfor %}
     </div>
   </div>
 </div>
