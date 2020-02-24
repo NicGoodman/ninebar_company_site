@@ -11,9 +11,9 @@
       {% for block in entry.serviceIntroProject.one().projectThumbnail.all() %}
         {% set projectThumbnailImage = block.image.one() %}
       {% endfor %}
-        {% set projectLink = entry.serviceIntroProject.url() %}
-        {% set projectTitle = entry.serviceIntroProject.title %}
-        {% set projectSubtitle = entry.serviceIntroProject.title %}
+        {% set projectLink = entry.serviceIntroProject.one().url() %}
+        {% set projectTitle = entry.serviceIntroProject.one().title %}
+        {% set projectSubtitle = entry.serviceIntroProject.one().title %}
         {% include "_components/_general/projectThumbnail-component" %}
         {% block projectThumbnail %}
         {% endblock %}
