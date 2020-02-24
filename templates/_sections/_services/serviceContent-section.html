@@ -37,9 +37,9 @@
         {% for block in project.projectThumbnail.all() %}
           {% set projectThumbnailImage = block.image.one() %}
         {% endfor %}
-          {% set projectLink = entry.relatedProjects.url() %}
-          {% set projectTitle = entry.relatedProjects.title %}
-          {% set projectSubtitle = entry.relatedProjects.title %}
+          {% set projectLink = project.url() %}
+          {% set projectTitle = project.title %}
+          {% set projectSubtitle = project.title %}
           {{ block('projectThumbnail') }}
       {% endfor %}
     </div>
