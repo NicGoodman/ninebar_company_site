@@ -31,7 +31,7 @@
         {% set projectLink = project.url() %}
         {% set projectTitle = project.title %}
         {% set projectSubtitle = project.title %}
-        {% set projectType = project.projectType.title %}
+        {% set projectType = '' %}
           {% include "_components/_projects/projectGridItem-component" %}
           {% block projectGridItem %}
           {% endblock %}
