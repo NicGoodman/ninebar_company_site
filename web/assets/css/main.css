@@ -14561,6 +14561,10 @@ button:active {
   transition-duration: 1000ms;
 }
 
+button:hover {
+  transform:translate3d(0,0,0);
+}
+
 .is-checked {
   color:#ffcb58;
   background-color:#002a4e;
