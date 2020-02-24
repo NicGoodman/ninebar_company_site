@@ -4,7 +4,7 @@
   {% set preText = entry.heroStatement.type('preStaticText').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
   <div class="mb-6 revealMe load-hidden">
-    <h2 id="heroText">
+    <h2 id="heroText" class="transition-all transform duratino-300 ease-in-out">
     {{ preText.text }}
       {% for textOption in rotatingText %}
         <div id="content-{{ loop.index }}" class="text-nb-dark-blue inline-block">{{ textOption.text }}</div>
