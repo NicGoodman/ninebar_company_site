@@ -36,7 +36,6 @@
         {% set projectLink = entry.relatedProjects.url() %}
         {% set projectTitle = entry.relatedProjects.title %}
         {% set projectSubtitle = entry.relatedProjects.title %}
-        {% include "_components/_general/projectThumbnail-component" %}
         {% block projectThumbnail %}
         {% endblock %}
       {% endfor %}
