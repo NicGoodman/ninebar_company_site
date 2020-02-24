@@ -34,15 +34,27 @@
       {% endfor %}
     </div>
     <div id="work-examples" class="flex flex-col md:flex-row">
-      {% set projectThumbnail = '' %}
       {% for project in entry.relatedProjects.all() %}
+      {% set projectThumbnail = '' %}
         {% for block in project.projectThumbnail.all() %}
           {% set projectThumbnail = block.image.one() %}
         {% endfor %}
           {% set projectLink = project.url() %}
           {% set projectTitle = project.title %}
           {% set projectSubtitle = project.title %}
-          {{ block('projectThumbnail') }}
+          <div class="Thumbnail-Wrapper">
+            <a href="{{ projectLink }}">
+              <div class="Thumbnail-Caption">
+                <h4 class="Thumbnail-Title">
+                  {{ projectTitle }}
+                </h4>
+                <h5 class="Thumbnail-subTitle">
+                  {{ projectSubtitle }}
+                </h5>
+              </div>
+              <img src="{{ projectThumbnail.url() }}" alt="" class="Thumbnail-Image">
+            </a>
+          </div>
       {% endfor %}
     </div>
   </div>
