@@ -7,9 +7,9 @@
       <h1 id="pageHeader" class="mb-4">{{ entry.title }}</h1>
     </div>
     <div id="intro-content" class="flex flex-col">
-      {% set projectThumbnailImage = '' %}
+      {% set projectThumbnail1 = '' %}
       {% for block in entry.serviceIntroProject.one().projectThumbnail.all() %}
-        {% set projectThumbnailImage = block.image.one() %}
+        {% set projectThumbnail = block.image.one() %}
       {% endfor %}
         {% set projectLink = entry.serviceIntroProject.one().url() %}
         {% set projectTitle = entry.serviceIntroProject.one().title %}
@@ -33,9 +33,9 @@
     </div>
     <div id="work-examples" class="flex flex-col md:flex-row">
       {% for project in entry.relatedProjects.all() %}
-        {% set projectThumbnailImage = '' %}
+        {% set projectThumbnail = '' %}
         {% for block in project.projectThumbnail.all() %}
-          {% set projectThumbnailImage = block.image.one() %}
+          {% set projectThumbnail = block.image.one() %}
         {% endfor %}
           {% set projectLink = project.url() %}
           {% set projectTitle = project.title %}
