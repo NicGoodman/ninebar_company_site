@@ -15,9 +15,10 @@
         {% set projectLink = entry.serviceIntroProject.one().url() %}
         {% set projectTitle = entry.serviceIntroProject.one().title %}
         {% set projectSubtitle = entry.serviceIntroProject.one().title %}
-        {% include "_components/_general/projectThumbnail-component" %}
+        {% embed "_components/_general/projectThumbnail-component" %}
         {% block projectThumbnail %}
         {% endblock %}
+        {% endembed %}
         </div>
       <h4>{{ entry.serviceIntroStatement }}</h4>
     </div>
@@ -42,19 +43,10 @@
           {% set projectLink = project.url() %}
           {% set projectTitle = project.title %}
           {% set projectSubtitle = project.title %}
-          <div class="Thumbnail-Wrapper">
-            <a href="{{ projectLink }}">
-              <div class="Thumbnail-Caption">
-                <h4 class="Thumbnail-Title">
-                  {{ projectTitle }}
-                </h4>
-                <h5 class="Thumbnail-subTitle">
-                  {{ projectSubtitle }}
-                </h5>
-              </div>
-              <img src="{{ projectThumbnail.url() }}" alt="" class="Thumbnail-Image">
-            </a>
-          </div>
+          {% embed "_components/_general/projectThumbnail-component" %}
+          {% block projectThumbnail %}
+          {% endblock %}
+          {% endembed %}
       {% endfor %}
     </div>
   </div>
