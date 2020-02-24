@@ -34,8 +34,8 @@
       {% endfor %}
     </div>
     <div id="work-examples" class="flex flex-col md:flex-row">
+      {% set projectThumbnail = '' %}
       {% for project in entry.relatedProjects.all() %}
-        {% set projectThumbnail = '' %}
         {% for block in project.projectThumbnail.all() %}
           {% set projectThumbnail = block.image.one() %}
         {% endfor %}
