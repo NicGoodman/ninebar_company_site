@@ -130,6 +130,10 @@ button:active {
 
 @tailwind utilities;
 
+button {
+  will-change: transform;
+}
+
 .is-checked {
   color:#ffcb58;
   background-color:#002a4e;
