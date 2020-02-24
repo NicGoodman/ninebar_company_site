@@ -61,6 +61,7 @@ button {
   @apply transition-transform;
   @apply ease-in-out;
   @apply duration-300;
+  @apply transform;
 }
 
 button:hover {
@@ -129,10 +130,7 @@ button:active {
 
 @tailwind utilities;
 
-button {
-  -webkit-transform:translate3d(0,0,0);
-  transform:translate3d(0,0,0);
-}
+
 
 .is-checked {
   color:#ffcb58;
