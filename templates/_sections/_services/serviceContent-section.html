@@ -33,7 +33,8 @@
         </div>
       {% endfor %}
     </div>
-    <div id="work-examples" class="flex flex-col md:flex-row">
+    <div id="work-examples" class="flex flex-col md:flex-row flex-wrap">
+      <h4>{{ entry.seeMoreStatement }}</h4>
       {% for project in entry.relatedProjects.all() %}
       {% set projectThumbnail = '' %}
         {% for block in project.projectThumbnail.all() %}
@@ -42,7 +43,7 @@
           {% set projectLink = project.url() %}
           {% set projectTitle = project.title %}
           {% set projectSubtitle = project.title %}
-          <div class="Thumbnail-Wrapper ml-2">
+          <div class="Thumbnail-Wrapper ml-4">
             <a href="{{ projectLink }}">
               <div class="Thumbnail-Caption">
                 <h4 class="Thumbnail-Title">
@@ -56,6 +57,9 @@
             </a>
           </div>
       {% endfor %}
+      <button type="button" name="seeMoreWork" class="self-center mt-8 revealMe load-hidden">
+        <h4>See More of Our Work!</h4>
+      </button>
     </div>
   </div>
 </div>
