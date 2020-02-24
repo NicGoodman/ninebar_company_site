@@ -1,0 +1,17 @@
+{% block projectGridItem %}
+<div class="grid-item {{ thumbnailSize }} {{ projectType }} web">
+  <div class="Thumbnail-Wrapper load-hidden revealMe">
+    <a href="{{ projectLink }}">
+      <div class="Thumbnail-Caption">
+        <h4 class="Thumbnail-Title text-lg">
+          {{ projectTitle }}
+        </h4>
+        <h5 class="Thumbnail-subTitle text-base">
+          {{ projectSubtitle }}
+        </h5>
+      </div>
+      <img src="{{ projectThumbnail.url() }}" alt="" class="Thumbnail-Image">
+    </a>
+  </div>
+</div>
+{% endblock %}
