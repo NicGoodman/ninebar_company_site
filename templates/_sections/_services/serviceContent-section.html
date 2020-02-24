@@ -7,7 +7,7 @@
       <h1 id="pageHeader" class="mb-4">{{ entry.title }}</h1>
     </div>
     <div id="intro-content" class="flex flex-col">
-      {% set projectThumbnail1 = '' %}
+      {% set projectThumbnail = '' %}
       {% for block in entry.serviceIntroProject.one().projectThumbnail.all() %}
         {% set projectThumbnail = block.image.one() %}
       {% endfor %}
