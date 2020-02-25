@@ -19,7 +19,7 @@
         <div id="header-text"class="text-nb-light-blue text-right mt-8 w-full top-0 z-50 leading-none mb-12">
           <h1 id="pageHeader" class="mb-4">{{ entry.title }}</h1>
         </div>
-      <p class="text-nb-dark-blue text-right w-full lg:w-3/5">{{ entry.serviceIntroStatement }}</p>
+      <p class="text-nb-dark-blue text-right w-full lg:w-3/5 self-end">{{ entry.serviceIntroStatement }}</p>
     </div>
     <div id="process-steps" class="flex flex-col md:flex-row items-end mb-24">
       {% for block in entry.processSteps.all() %}
@@ -32,9 +32,9 @@
           <p>{{ stepDescription }}</p>
         </div>
       {% endfor %}
+      <p class="text-nb-dark-blue text-right w-full lg:w-3/5 self-end">{{ entry.seeMoreStatement }}</p>
     </div>
     <div id="work-examples" class="flex flex-col md:flex-row flex-wrap">
-      <p class="text-nb-dark-blue text-right w-full lg:w-3/5">{{ entry.seeMoreStatement }}</p>
       {% for project in entry.relatedProjects.all() %}
       {% set projectThumbnail = '' %}
         {% for block in project.projectThumbnail.all() %}
