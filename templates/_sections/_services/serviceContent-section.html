@@ -20,7 +20,7 @@
         <div id="header-text" class="text-nb-yellow text-left mt-8 w-full top-0 z-50 leading-none mb-8">
           <h1 id="pageHeader" class="pt-8">{{ entry.title }}</h1>
         </div>
-        <h4 class="text-nb-mint text-left">{{ entry.introStatement }}</h4>
+        <h4 class="text-nb-mint text-left leading-relaxed">{{ entry.introStatement|nl2br }}</h4>
       </div>
     </div>
     {% if entry.processSteps|length %}
