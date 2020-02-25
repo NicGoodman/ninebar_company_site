@@ -3,7 +3,7 @@
   <div class="content1BG flex-grow opposite-sloped nb-pink-gradient w-full" style="transform: scaleX(-1);">
   </div>
   <div class="content1 flex flex-col max-w-screen-xl -mt-24 absolute justify-center w-full pl-4 py-8 pr-20 md:pr-24 md:py-16 md:pl-8">
-    <div id="intro-wrapper" class="flex flex-col md:flex-row">
+    <div id="intro-wrapper" class="flex flex-col md:flex-row mb-24">
       <div id="intro-image" class="w-2/5 -mt-16">
         {% set projectThumbnail = '' %}
         {% for block in entry.serviceIntroProject.one().projectThumbnail.all() %}
@@ -16,8 +16,8 @@
         {% block projectThumbnail %}
         {% endblock %}
       </div>
-      <div id="intro-text" class="flex flex-col w-3/5 pt-8 mb-24 pl-8">
-        <div id="header-text" class="text-nb-light-blue text-left mt-8 w-full top-0 z-50 leading-none mb-12">
+      <div id="intro-text" class="flex flex-col w-3/5 pt-16 pl-8">
+        <div id="header-text" class="text-nb-light-blue text-left mt-8 w-full top-0 z-50 leading-none mb-8">
           <h1 id="pageHeader" class="mb-4">{{ entry.title }}</h1>
         </div>
         <p class="text-nb-dark-blue text-left w-full self-end">{{ entry.serviceIntroStatement }}</p>
