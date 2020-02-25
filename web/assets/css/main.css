@@ -14764,21 +14764,6 @@ button {
   height: 32px;
 }
 
-.content1BG {
-  transform:translate3d(0,0,0);
-  transition: height .3s ease-in-out;
-}
-
-.content2BG {
-  transform:translate3d(0,0,0);
-  transition: height .3s ease-in-out;
-}
-
-.content3BG {
-  transform:translate3d(0,0,0);
-  transition: height .3s ease-in-out;
-}
-
 /*html.sr .load-hidden {
     visibility: hidden;
 }*/

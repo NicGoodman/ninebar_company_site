@@ -334,24 +334,6 @@ button {
   height: 32px;
 }
 
-.content1BG {
-  -webkit-transform:translate3d(0,0,0);
-  transform:translate3d(0,0,0);
-  transition: height .3s ease-in-out;
-}
-
-.content2BG {
-  -webkit-transform:translate3d(0,0,0);
-  transform:translate3d(0,0,0);
-  transition: height .3s ease-in-out;
-}
-
-.content3BG {
-  -webkit-transform:translate3d(0,0,0);
-  transform:translate3d(0,0,0);
-  transition: height .3s ease-in-out;
-}
-
 /*html.sr .load-hidden {
     visibility: hidden;
 }*/
