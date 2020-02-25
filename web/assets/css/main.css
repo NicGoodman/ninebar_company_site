@@ -682,7 +682,7 @@ button:active {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 5rem;
+    font-size: 4.9rem;
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     text-transform: lowercase;
@@ -11764,7 +11764,7 @@ button:active {
 }
 
 .text-7xl {
-  font-size: 5rem;
+  font-size: 4.9rem;
 }
 
 .text-8xl {
@@ -25765,7 +25765,7 @@ html.sr .load-hidden {
   }
 
   .sm\:text-7xl {
-    font-size: 5rem;
+    font-size: 4.9rem;
   }
 
   .sm\:text-8xl {
@@ -39569,7 +39569,7 @@ html.sr .load-hidden {
   }
 
   .md\:text-7xl {
-    font-size: 5rem;
+    font-size: 4.9rem;
   }
 
   .md\:text-8xl {
@@ -53373,7 +53373,7 @@ html.sr .load-hidden {
   }
 
   .lg\:text-7xl {
-    font-size: 5rem;
+    font-size: 4.9rem;
   }
 
   .lg\:text-8xl {
@@ -67177,7 +67177,7 @@ html.sr .load-hidden {
   }
 
   .xl\:text-7xl {
-    font-size: 5rem;
+    font-size: 4.9rem;
   }
 
   .xl\:text-8xl {
