@@ -334,18 +334,6 @@ button {
   height: 32px;
 }
 
-.content1BG {
-  transition: min-height 0.15s ease-in-out;
-}
-
-.content2BG {
-  transition: min-height 0.15s ease-in-out;
-}
-
-.content3BG {
-  transition: min-height 0.15s ease-in-out;
-}
-
 /*html.sr .load-hidden {
     visibility: hidden;
 }*/
