@@ -21,7 +21,7 @@
         </div>
       <p class="text-nb-dark-blue text-right w-full lg:w-3/5 self-end">{{ entry.serviceIntroStatement }}</p>
     </div>
-    <div id="process-steps" class="flex flex-col md:flex-row items-end mb-24">
+    <div id="process-steps" class="flex flex-col md:flex-row flex-wrap items-end mb-24">
       {% for block in entry.processSteps.all() %}
         {% set stepIcon = block.stepIcon.one() %}
         {% set stepTitle = block.stepTitle %}
