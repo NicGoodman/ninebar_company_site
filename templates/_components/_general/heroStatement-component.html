@@ -2,14 +2,12 @@
 <div class="w-full text-nb-mint text-right">
   {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
   {% set preTextLine1 = entry.heroStatement.type('preStaticTextLine1').one() %}
-      {% if entry.heroStatement.type('preStaticTextLine2')|length %}
-  {% set preTextLine2 = entry.heroStatement.type('preStaticTextLine2').one() %}
-  {% endif %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
   <div class="mb-6 revealMe load-hidden">
     <h2 id="heroText" class="transition-all transform duratino-300 ease-in-out">
     {{ preTextLine1.text }}
-    {% if preTextLine2|length %}
+    {% if entry.heroStatement.type('preStaticTextLine2')|length %}
+      {% set preTextLine2 = entry.heroStatement.type('preStaticTextLine2').one() %}
     <br />
     {{ preTextLine2.text }}
     {% endif%}
