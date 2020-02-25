@@ -16,10 +16,10 @@
         {% block projectThumbnail %}
         {% endblock %}
         </div>
-        <div id="header-text"class="text-nb-dark-blue text-right mt-8 w-full top-0 z-50 leading-none mb-12">
+        <div id="header-text"class="text-nb-light-blue text-right mt-8 w-full top-0 z-50 leading-none mb-12">
           <h1 id="pageHeader" class="mb-4">{{ entry.title }}</h1>
         </div>
-      <h4 class="text-nb-light-blue text-right mb-8">{{ entry.serviceIntroStatement }}</h4>
+      <h4 class="text-nb-dark-blue text-right mb-8">{{ entry.serviceIntroStatement }}</h4>
     </div>
     <div id="process-steps" class="flex flex-col md:flex-row">
       {% for block in entry.processSteps.all() %}
