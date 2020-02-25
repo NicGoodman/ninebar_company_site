@@ -23,6 +23,7 @@
         <p class="text-nb-dark-blue text-left">{{ entry.serviceIntroStatement }}</p>
       </div>
     </div>
+    {% if entry.processSteps|length %}
     <div id="process-steps" class="flex flex-col md:flex-row flex-wrap items-end justify-end mb-16">
       {% for block in entry.processSteps.all() %}
       {% set stepIcon = block.stepIcon.one() %}
@@ -34,9 +35,12 @@
         <p class="text-center">{{ stepDescription }}</p>
       </div>
       {% endfor %}
-      <h4 class="text-nb-dark-blue text-right w-full lg:w-3/5 self-end">{{ entry.seeMoreStatement }}</h4>
     </div>
+    {% endif %}
     <div id="work-examples" class="flex flex-col md:flex-row flex-wrap">
+      {% if entry.seeMoreStatement|length %}
+      <h4 class="text-nb-dark-blue text-right w-full lg:w-4/5 self-end">{{ entry.seeMoreStatement }}</h4>
+      {% endif %}
       {% for project in entry.relatedProjects.all() %}
       {% set projectThumbnail = '' %}
       {% for block in project.projectThumbnail.all() %}
