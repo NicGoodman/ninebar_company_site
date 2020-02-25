@@ -8,7 +8,7 @@
     {{ preTextLine1.text }}
     {% if entry.heroStatement.type('preStaticTextLine2')|length %}
       {% set preTextLine2 = entry.heroStatement.type('preStaticTextLine2').one() %}
-    <br />
+    <br class="block xl:hidden"/>
     {{ preTextLine2.text }}
     {% endif%}
       {% for textOption in rotatingText %}
