@@ -1,5 +1,5 @@
 {% block heroStatement %}
-<div class="w-full text-nb-mint text-right">
+<div class="w-full md:w-11/12 text-nb-mint text-right">
   {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
   {% set preTextLine1 = entry.heroStatement.type('preStaticTextLine1').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
