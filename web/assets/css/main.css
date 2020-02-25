@@ -14765,15 +14765,15 @@ button {
 }
 
 .content1BG {
-  transition: height .15s ease-in-out;
+  transition: height .3s ease-in-out;
 }
 
 .content2BG {
-  transition: height .15s ease-in-out;
+  transition: height .3s ease-in-out;
 }
 
 .content3BG {
-  transition: height .15s ease-in-out;
+  transition: height .3s ease-in-out;
 }
 
 /*html.sr .load-hidden {
