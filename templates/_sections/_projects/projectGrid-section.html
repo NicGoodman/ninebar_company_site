@@ -5,8 +5,8 @@
   <div class="content1 flex flex-col max-w-screen-xl -mt-24 absolute justify-center w-full pl-4 py-8 pr-20 md:pr-24 md:py-16 md:pl-8">
     <div class="text-nb-dark-blue text-right mt-24 w-full top-0 z-50 leading-none mb-12">
       <h1 id="pageHeader" class="mb-4">{{ entry.title }}</h1>
-      <h4 class="text-nb-dark-blue text-right w-full">{{ entry.introStatement|nl2br }}</h4>
-      <div class="button-group filters-button-group revealMe load-hidden">
+      <h4 class="text-nb-dark-blue text-right w-full leading-relaxed">{{ entry.introStatement|nl2br }}</h4>
+      <div class="button-group filters-button-group revealMe load-hidden mt-8">
         <button class="button is-checked bg-nb-pink text-nb-dark-blue p-2 my-2 ml-4" data-filter="*" onclick="updateContainerDelay()">
           <p class="font-bold text-base">all work</p>
         </button>
