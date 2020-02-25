@@ -682,21 +682,21 @@ button:active {
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 4.9rem;
+    font-size: 4.7rem;
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     text-transform: lowercase;
   }
 
   h2 {
-    font-size: 2.25rem;
+    font-size: 3rem;
     font-family: chaparral-pro, serif;
     font-weight: 700;
     text-transform: lowercase;
   }
 
   h3 {
-    font-size: 2.25rem;
+    font-size: 3rem;
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     text-transform: lowercase;
@@ -736,48 +736,6 @@ button:active {
     font-size: 6rem;
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
-    text-transform: lowercase;
-  }
-
-  h2 {
-    font-size: 3rem;
-    font-family: chaparral-pro, serif;
-    font-weight: 700;
-    text-transform: lowercase;
-  }
-
-  h3 {
-    font-size: 3rem;
-    font-family: proxima-nova, sans-serif;
-    font-weight: 700;
-    text-transform: lowercase;
-  }
-
-  h4 {
-    font-size: 1.875rem;
-    font-family: chaparral-pro, serif;
-    font-weight: 700;
-    text-transform: lowercase;
-  }
-
-  h5 {
-    font-size: 1.5rem;
-    font-family: chaparral-pro, serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-
-  p {
-    font-size: 1.25rem;
-    font-family: chaparral-pro, serif;
-    font-weight: 600;
-    text-transform: none;
-  }
-
-  h6 {
-    font-size: 1rem;
-    font-family: proxima-nova, sans-serif;
-    font-weight: 600;
     text-transform: lowercase;
   }
 }
@@ -11764,7 +11722,7 @@ button:active {
 }
 
 .text-7xl {
-  font-size: 4.9rem;
+  font-size: 4.7rem;
 }
 
 .text-8xl {
@@ -25765,7 +25723,7 @@ html.sr .load-hidden {
   }
 
   .sm\:text-7xl {
-    font-size: 4.9rem;
+    font-size: 4.7rem;
   }
 
   .sm\:text-8xl {
@@ -39569,7 +39527,7 @@ html.sr .load-hidden {
   }
 
   .md\:text-7xl {
-    font-size: 4.9rem;
+    font-size: 4.7rem;
   }
 
   .md\:text-8xl {
@@ -53373,7 +53331,7 @@ html.sr .load-hidden {
   }
 
   .lg\:text-7xl {
-    font-size: 4.9rem;
+    font-size: 4.7rem;
   }
 
   .lg\:text-8xl {
@@ -67177,7 +67135,7 @@ html.sr .load-hidden {
   }
 
   .xl\:text-7xl {
-    font-size: 4.9rem;
+    font-size: 4.7rem;
   }
 
   .xl\:text-8xl {
