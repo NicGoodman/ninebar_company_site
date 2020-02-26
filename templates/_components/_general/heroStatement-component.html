@@ -14,7 +14,7 @@
     {% endif%}
         <br class="block md:hidden"/>
       {% for textOption in rotatingText %}
-        <div id="content-{{ loop.index }}" class="text-nb-dark-blue inline-block">{{ textOption.text }}</div>
+        <div id="content-{{ loop.index }}" class="text-nb-dark-blue inline-block">{{ textOption.text|raw }}</div>
       {% endfor %}
       <br/>
       {{ postText.text|raw }}
