@@ -4,21 +4,23 @@
   {% set preTextLine1 = entry.heroStatement.type('preStaticTextLine1').one() %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
   <div class="mb-6 revealMe load-hidden">
+    {% filter typogrify %}
     <h2 id="heroText" class="transition-all transform duratino-300 ease-in-out">
-    {{ preTextLine1.text |typogrify  }}
+    {{ preTextLine1.text  }}
     {% if entry.heroStatement.type('preStaticTextLine2')|length %}
       {% set preTextLine2 = entry.heroStatement.type('preStaticTextLine2').one() %}
     <br class="block xl:hidden"/>
-    {{ preTextLine2.text|typogrify }}
+    {{ preTextLine2.text }}
     {% endif%}
         <br class="block md:hidden"/>
       {% for textOption in rotatingText %}
-        <div id="content-{{ loop.index }}" class="text-nb-dark-blue inline-block">{{ textOption.text|typogrify }}</div>
+        <div id="content-{{ loop.index }}" class="text-nb-dark-blue inline-block">{{ textOption.text }}</div>
       {% endfor %}
       <br/>
-      {{ postText.text|typogrify }}
+      {{ postText.text }}
       </h2>
+      {% endfilter %}
   </div>
-    <button type="button" name="callToAction" class="revealMe load-hidden"><h4>{{ entry.callToActionButtonText|typogrify }}</h4></button>
+    <button type="button" name="callToAction" class="revealMe load-hidden"><h4>{{ entry.callToActionButtonText }}</h4></button>
 </div>
 {% endblock %}
