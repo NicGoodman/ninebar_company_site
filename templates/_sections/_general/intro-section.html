@@ -1,3 +1,12 @@
-{% include "_components/_general/heroStatement-component" %}
-{% block heroStatement %}
+{% block intro %}
+<div class="introBG flex flex-col items-center nb-light-blue-gradient">
+    {% include "_sections/_general/header-section" %}
+    {% block header %}
+    {% endblock %}
+  <div class="intro max-w-screen-xl w-full">
+    {% include "_components/_general/heroStatement-component" %}
+    {% block heroStatement %}
+    {% endblock %}
+    </div>
+</div>
 {% endblock %}

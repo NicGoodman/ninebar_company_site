@@ -8,20 +8,11 @@
     {% endblock %}
   </nav>
   <section>
-    <div class="introBG flex flex-col items-center nb-light-blue-gradient">
-      <header class="px-4 my-4 md:px-8 md:mt-8 md:mb-24 w-full">
-        {% include "_sections/_general/header-section" %}
-        {% block header %}
-        {% endblock %}
-      </header>
-      <div class="intro max-w-screen-xl w-full">
-        <article class="flex flex-col px-6 md:pl-8 md:pr-24 items-end z-40 mb-64">
+
         {% include "_sections/_general/intro-section" %}
         {% block intro %}
         {% endblock %}
-        </article>
-        </div>
-    </div>
+
   </section>
   <section>
     {% include "_sections/_projects/projectGrid-section" %}
