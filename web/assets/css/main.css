@@ -603,21 +603,21 @@ h1 {
 }
 
 h2 {
-  font-size: 2.25rem;
+  font-size: 1.875rem;
   font-family: chaparral-pro, serif;
   font-weight: 700;
   text-transform: lowercase;
 }
 
 h3 {
-  font-size: 2.25rem;
+  font-size: 1.875rem;
   font-family: proxima-nova, sans-serif;
   font-weight: 700;
   text-transform: lowercase;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: chaparral-pro, serif;
   font-weight: 700;
   text-transform: lowercase;
@@ -689,21 +689,21 @@ button:active {
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-family: chaparral-pro, serif;
     font-weight: 700;
     text-transform: lowercase;
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 2.25rem;
     font-family: proxima-nova, sans-serif;
     font-weight: 700;
     text-transform: lowercase;
   }
 
   h4 {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-family: chaparral-pro, serif;
     font-weight: 700;
     text-transform: lowercase;
@@ -731,10 +731,34 @@ button:active {
   }
 }
 
+@media (min-width: 1024px) {
+}
+
 @media (min-width: 1280px) {
   h1 {
     font-size: 6rem;
     font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-family: chaparral-pro, serif;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+
+  h3 {
+    font-size: 3rem;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    text-transform: lowercase;
+  }
+
+  h4 {
+    font-size: 1.875rem;
+    font-family: chaparral-pro, serif;
     font-weight: 700;
     text-transform: lowercase;
   }

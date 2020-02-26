@@ -8,21 +8,21 @@ h1 {
 }
 
 h2 {
-  @apply text-4xl;
+  @apply text-3xl;
   @apply font-serif;
   @apply font-bold;
   @apply lowercase;
 }
 
 h3 {
-  @apply text-4xl;
+  @apply text-3xl;
   @apply font-sans;
   @apply font-bold;
   @apply lowercase;
 }
 
 h4 {
-  @apply text-2xl;
+  @apply text-xl;
   @apply font-serif;
   @apply font-bold;
   @apply lowercase;
@@ -84,21 +84,21 @@ button:active {
   }
 
   h2 {
-    @apply text-5xl;
+    @apply text-4xl;
     @apply font-serif;
     @apply font-bold;
     @apply lowercase;
   }
 
   h3 {
-    @apply text-5xl;
+    @apply text-4xl;
     @apply font-sans;
     @apply font-bold;
     @apply lowercase;
   }
 
   h4 {
-    @apply text-3xl;
+    @apply text-2xl;
     @apply font-serif;
     @apply font-bold;
     @apply lowercase;
@@ -126,10 +126,35 @@ button:active {
   }
 }
 
+@screen lg {
+
+}
+
 @screen xl {
   h1 {
     @apply text-8xl;
     @apply font-sans;
+    @apply font-bold;
+    @apply lowercase;
+  }
+
+  h2 {
+    @apply text-5xl;
+    @apply font-serif;
+    @apply font-bold;
+    @apply lowercase;
+  }
+
+  h3 {
+    @apply text-5xl;
+    @apply font-sans;
+    @apply font-bold;
+    @apply lowercase;
+  }
+
+  h4 {
+    @apply text-3xl;
+    @apply font-serif;
     @apply font-bold;
     @apply lowercase;
   }
