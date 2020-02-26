@@ -8,16 +8,9 @@
     {% endblock %}
   </nav>
   <section>
-    <div class="introBG flex flex-col items-center nb-light-blue-gradient">
-        {% include "_sections/_general/header-section" %}
-        {% block header %}
-        {% endblock %}
-      <div class="intro max-w-screen-xl w-full">
-        {% include "_sections/_general/intro-section" %}
-        {% block intro %}
-        {% endblock %}
-      </div>
-    </div>
+    {% include "_sections/_general/intro-section" %}
+    {% block intro %}
+    {% endblock %}
   </section>
   <section>
     {% include "_sections/_services/serviceContent-section" %}
