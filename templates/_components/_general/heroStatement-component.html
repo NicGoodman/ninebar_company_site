@@ -10,17 +10,17 @@
     {% if entry.heroStatement.type('preStaticTextLine2')|length %}
       {% set preTextLine2 = entry.heroStatement.type('preStaticTextLine2').one() %}
     <br class="block xl:hidden"/>
-    {{ preTextLine2.text }}
+    {{ preTextLine2.text|raw }}
     {% endif%}
         <br class="block md:hidden"/>
       {% for textOption in rotatingText %}
         <div id="content-{{ loop.index }}" class="text-nb-dark-blue inline-block">{{ textOption.text }}</div>
       {% endfor %}
       <br/>
-      {{ postText.text }}
+      {{ postText.text|raw }}
       </h2>
       {% endfilter %}
   </div>
-    <button type="button" name="callToAction" class="revealMe load-hidden"><h4>{{ entry.callToActionButtonText }}</h4></button>
+    <button type="button" name="callToAction" class="revealMe load-hidden"><h4>{{ entry.callToActionButtonText|raw }}</h4></button>
 </div>
 {% endblock %}
