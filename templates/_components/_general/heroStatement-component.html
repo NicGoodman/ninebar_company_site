@@ -6,7 +6,7 @@
   <div class="mb-6 revealMe load-hidden">
     {% filter typogrify %}
     <h2 id="heroText" class="transition-all transform duratino-300 ease-in-out">
-    {{ preTextLine1.text  }}
+    {{ preTextLine1.text|raw  }}
     {% if entry.heroStatement.type('preStaticTextLine2')|length %}
       {% set preTextLine2 = entry.heroStatement.type('preStaticTextLine2').one() %}
     <br class="block xl:hidden"/>
