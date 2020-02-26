@@ -9,16 +9,16 @@
     {% if entry.heroStatement.type('preStaticTextLine2')|length %}
       {% set preTextLine2 = entry.heroStatement.type('preStaticTextLine2').one() %}
     <br class="block xl:hidden"/>
-    {{ preTextLine2.text |typogrify  }}
+    {{ preTextLine2.text|typogrify }}
     {% endif%}
         <br class="block md:hidden"/>
       {% for textOption in rotatingText %}
-        <div id="content-{{ loop.index }}" class="text-nb-dark-blue inline-block">{{ textOption.text |typogrify  }}</div>
+        <div id="content-{{ loop.index }}" class="text-nb-dark-blue inline-block">{{ textOption.text|typogrify }}</div>
       {% endfor %}
       <br/>
-      {{ postText.text }}
+      {{ postText.text|typogrify }}
       </h2>
   </div>
-    <button type="button" name="callToAction" class="revealMe load-hidden"><h4>{{ entry.callToActionButtonText |typogrify  }}</h4></button>
+    <button type="button" name="callToAction" class="revealMe load-hidden"><h4>{{ entry.callToActionButtonText|typogrify }}</h4></button>
 </div>
 {% endblock %}
