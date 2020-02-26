@@ -5,7 +5,7 @@
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
   <div class="mb-6 revealMe load-hidden">
     {% filter typogrify %}
-    <h2 id="heroText" class="transition-all transform duratino-300 ease-in-out">
+    <h2 id="heroText" class="transition-all transform duration-300 ease-in-out pl-4">
     {{ preTextLine1.text|raw  }}
     {% if entry.heroStatement.type('preStaticTextLine2')|length %}
       {% set preTextLine2 = entry.heroStatement.type('preStaticTextLine2').one() %}
