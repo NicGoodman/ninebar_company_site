@@ -1,0 +1,25 @@
+{% extends "_layouts/base-layout" %}
+{% block body %}
+<main>
+  <section>
+    {% include "_sections/_general/nav-section" %}
+    {% block nav %}
+    {% endblock %}
+  </section>
+  <section>
+    {% include "_sections/_general/intro-section" %}
+    {% block intro %}
+    {% endblock %}
+  </section>
+  <section>
+    {% include "_sections/_blog/postGrid-section" %}
+    {% block featuredWork %}
+    {% endblock %}
+  </section>
+</main>
+<footer>
+  {% include "_sections/_general/footer-section" %}
+  {% block footer %}
+  {% endblock %}
+</footer>
+{% endblock %}
