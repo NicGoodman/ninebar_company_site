@@ -1,0 +1,34 @@
+{% extends "_layouts/base-layout" %}
+{% block body %}
+<main>
+  <section>
+    {% include "_sections/_general/nav-section" %}
+    {% block nav %}
+    {% endblock %}
+  </section>
+  <section>
+    {% include "_sections/_general/intro-section" %}
+    {% block intro %}
+    {% endblock %}
+  </section>
+  <section>
+    {% include "_sections/_about/aboutIntro-section" %}
+    {% block featuredWork %}
+    {% endblock %}
+  </section>
+  <section>
+    {% include "_sections/_about/employees-section" %}
+    {% block relatedWork %}
+    {% endblock %}
+  </section>
+  <section>
+    {% include "_sections/_about/history-section" %}
+    {% block conclusion %}
+    {% endblock %}
+  </section>
+  <footer>
+    {% include "_sections/_about/footer-section" %}
+    {% block footerWithForm %}
+    {% endblock %}
+  </footer>
+  {% endblock %}
