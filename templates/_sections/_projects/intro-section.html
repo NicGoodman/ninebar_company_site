@@ -1,2 +1,18 @@
 {% block intro %}
+<div class="introBG flex flex-col items-center nb-light-blue-gradient">
+    {% include "_sections/_general/header-section" %}
+    {% block header %}
+    {% endblock %}
+  <div class="intro max-w-screen-xl w-full flex flex-col items-end">
+    <div class="w-full text-nb-mint text-right flex flex-col px-6 md:pl-8 md:pr-24 items-end z-40 mb-64">
+      <div class="mb-6 revealMe load-hidden">
+        {% filter typogrify %}
+          <h2>{{ entry.title }}</h2>
+          <h4>Subtitle Goes Here</h4>
+          <p>{{ entry.projectDescription }}</p>
+          {% endfilter %}
+      </div>
+    </div>
+    </div>
+</div>
 {% endblock %}
