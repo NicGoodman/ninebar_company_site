@@ -9,6 +9,7 @@
         {% filter typogrify %}
           <h2 class="text-nb-mint">{{ entry.title }}</h2>
           <h4 class="text-nb-dark-blue">Subtitle Goes Here</h4>
+          <p class="block md:hidden">{{ entry.projectDescription }}</p>
           {% endfilter %}
       </div>
     </div>
