@@ -1,8 +1,14 @@
 {% block heroStatement %}
 <div class="w-full text-nb-mint text-right flex flex-col px-6 md:pl-8 md:pr-24 items-end z-40 mb-64">
+  {% set preTextLine1 = '' %}
+  {% set postText = '' %}
   {% set rotatingText = entry.heroStatement.type('rotatingTextOption').all() %}
+  {% if entry.heroStatement.type('preStaticTextLine1')|length %}
   {% set preTextLine1 = entry.heroStatement.type('preStaticTextLine1').one() %}
+  {% endif %}
+  {% if entry.heroStatement.type('postStaticText')|length %}
   {% set postText = entry.heroStatement.type('postStaticText').one() %}
+  {% endif %}
   <div class="mb-6 revealMe load-hidden">
     {% filter typogrify %}
     <h2 id="heroText" class="transition-all transform duration-300 ease-in-out pl-4">
