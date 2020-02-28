@@ -61,7 +61,7 @@
 	var y = $(this).scrollTop();
 	// Show element after user scrolls past
 	// the top edge of its parent
-	$('#project-text').each(function () {
+	$('#project-description').each(function () {
 			var t = $(this).parent().offset().top;
 			if (y > t) {
 					$(this).fadeIn();
