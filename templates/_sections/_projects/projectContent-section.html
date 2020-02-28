@@ -6,7 +6,7 @@
     <div id="project-description" class="md:block sticky self-start top-0 text-right pr-4 pt-8 text-nb-mint mt-24">
       <h2 id="project-text" class="text-nb-mint hidden">{{ entry.title }}</h2>
       <h4 id="project-text" class="text-nb-yellow hidden">Subtitle Goes Here</h4>
-      <p id="project-text hidden">{{ entry.projectDescription }}</p>
+      <p id="project-text" class="hidden">{{ entry.projectDescription }}</p>
     </div>
     <div id="project-images" class="flex flex-col items-end -mt-16">
       {% for image in entry.projectImages.all() %}
