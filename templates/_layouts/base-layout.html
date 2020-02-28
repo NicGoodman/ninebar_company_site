@@ -55,6 +55,22 @@
 			setTimeout('updateContainer()', 100);
 		};
 	</script>
+	<script type="text/javascript">
+	$(document).scroll(function () {
+	//Show element after user scrolls 800px
+	var y = $(this).scrollTop();
+	// Show element after user scrolls past
+	// the top edge of its parent
+	$('#project-text').each(function () {
+			var t = $(this).parent().offset().top;
+			if (y > t) {
+					$(this).fadeIn();
+			} else {
+					$(this).fadeOut();
+			}
+	});
+});
+	</script>
 </head>
 
 <body class="bg-nb-light-blue">
