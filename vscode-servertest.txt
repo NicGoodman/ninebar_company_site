@@ -1,1 +1,1 @@
-This is just a test of vscode-server and git
+This is just a test of vscode-server and git workspace
