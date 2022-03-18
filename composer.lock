@@ -30,12 +30,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Cake\\Core\\": "."
-                },
                 "files": [
                     "functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Cake\\Core\\": "."
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -80,12 +80,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Cake\\Utility\\": "."
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Cake\\Utility\\": "."
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -653,7 +653,7 @@
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0-RC11"
+                "craftcms/cms": "^3.1.0"
             },
             "type": "craft-plugin",
             "extra": {
@@ -687,7 +687,7 @@
                 "form",
                 "yii2"
             ],
-            "time": "2020-05-04T10:04:00+00:00"
+            "time": "2020-08-12T12:54:10+00:00"
         },
         {
             "name": "craftcms/feed-me",
@@ -926,7 +926,7 @@
                 "requirements",
                 "yii2"
             ],
-            "time": "2020-05-28T16:57:05+00:00"
+            "time": "2020-07-14T18:57:12+00:00"
         },
         {
             "name": "creocoder/yii2-nested-sets",
@@ -1301,12 +1301,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "HTMLPurifier": "library/"
-                },
                 "files": [
                     "library/HTMLPurifier.composer.php"
                 ],
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
                 "exclude-from-classmap": [
                     "/library/HTMLPurifier/Language/"
                 ]
@@ -1365,12 +1365,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1423,12 +1423,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1483,12 +1483,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Psr7\\": "src/"
-                },
                 "files": [
                     "src/functions_include.php"
-                ]
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1805,6 +1805,20 @@
                 }
             ],
             "description": "Update helper",
+            "funding": [
+                {
+                    "url": "https://github.com/kylekatarnls",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/Carbon",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/nesbot/carbon",
+                    "type": "tidelift"
+                }
+            ],
             "time": "2020-04-07T20:44:10+00:00"
         },
         {
@@ -3028,22 +3042,70 @@
             "time": "2019-07-05T15:23:47+00:00"
         },
         {
-            "name": "nystudio107/craft-seomatic",
-            "version": "3.3.22",
+            "name": "nystudio107/craft-plugin-manifest",
+            "version": "1.0.8",
             "source": {
                 "type": "git",
-                "url": "https://github.com/nystudio107/craft-seomatic.git",
-                "reference": "3d9113e9a407d797da9a794883c494e199a12f33"
+                "url": "https://github.com/nystudio107/craft-plugin-manifest.git",
+                "reference": "47087da878be95b7bd79bb1b8f5f4f49f2bfbe5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/3d9113e9a407d797da9a794883c494e199a12f33",
-                "reference": "3d9113e9a407d797da9a794883c494e199a12f33",
+                "url": "https://api.github.com/repos/nystudio107/craft-plugin-manifest/zipball/47087da878be95b7bd79bb1b8f5f4f49f2bfbe5c",
+                "reference": "47087da878be95b7bd79bb1b8f5f4f49f2bfbe5c",
                 "shasum": ""
             },
             "require": {
-                "craftcms/cms": "^3.0.0",
+                "craftcms/cms": "^3.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "nystudio107\\pluginmanifest\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "nystudio107",
+                    "homepage": "https://nystudio107.com"
+                }
+            ],
+            "description": "Plugin Manifest is the conduit between Craft CMS plugins and webpack, with manifest.json & webpack-dev-server HMR support",
+            "keywords": [
+                "craftcms",
+                "manifest",
+                "plugin"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-10-11T16:38:14+00:00"
+        },
+        {
+            "name": "nystudio107/craft-seomatic",
+            "version": "3.4.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nystudio107/craft-seomatic.git",
+                "reference": "9ad5d83ca24fe6f9bd1c4b34c3d60fe38a8dc132"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/9ad5d83ca24fe6f9bd1c4b34c3d60fe38a8dc132",
+                "reference": "9ad5d83ca24fe6f9bd1c4b34c3d60fe38a8dc132",
+                "shasum": ""
+            },
+            "require": {
+                "craftcms/cms": "^3.1.19",
                 "davechild/textstatistics": "1.0.2",
+                "nystudio107/craft-plugin-manifest": "^1.0.4",
                 "php-science/textrank": "^1.0.3",
                 "sunra/php-simple-html-dom-parser": "^1.5.2"
             },
@@ -3055,23 +3117,8 @@
             "extra": {
                 "name": "SEOmatic",
                 "handle": "seomatic",
-                "hasCpSettings": true,
-                "hasCpSection": true,
                 "changelogUrl": "https://raw.githubusercontent.com/nystudio107/craft-seomatic/v3/CHANGELOG.md",
-                "class": "nystudio107\\seomatic\\Seomatic",
-                "components": {
-                    "frontendTemplates": "nystudio107\\seomatic\\services\\FrontendTemplates",
-                    "helper": "nystudio107\\seomatic\\services\\Helper",
-                    "jsonLd": "nystudio107\\seomatic\\services\\JsonLd",
-                    "link": "nystudio107\\seomatic\\services\\Link",
-                    "metaBundles": "nystudio107\\seomatic\\services\\MetaBundles",
-                    "metaContainers": "nystudio107\\seomatic\\services\\MetaContainers",
-                    "seoElements": "nystudio107\\seomatic\\services\\SeoElements",
-                    "script": "nystudio107\\seomatic\\services\\Script",
-                    "sitemaps": "nystudio107\\seomatic\\services\\Sitemaps",
-                    "tag": "nystudio107\\seomatic\\services\\Tag",
-                    "title": "nystudio107\\seomatic\\services\\Title"
-                }
+                "class": "nystudio107\\seomatic\\Seomatic"
             },
             "autoload": {
                 "psr-4": {
@@ -3103,7 +3150,13 @@
                 "tags",
                 "twitter"
             ],
-            "time": "2020-10-20T16:34:40+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/khalwat",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-09-26T04:38:32+00:00"
         },
         {
             "name": "nystudio107/craft-typogrify",
@@ -3190,12 +3243,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Opis\\Closure\\": "src/"
-                },
                 "files": [
                     "functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Opis\\Closure\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4169,6 +4222,7 @@
                 "mail",
                 "mailer"
             ],
+            "abandoned": "symfony/mailer",
             "time": "2019-11-12T09:31:26+00:00"
         },
         {
@@ -4425,12 +4479,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Ctype\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4501,12 +4555,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Iconv\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Iconv\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4578,12 +4632,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Intl\\Grapheme\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Grapheme\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4659,12 +4713,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4741,12 +4795,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Normalizer\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -4822,12 +4876,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Mbstring\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Mbstring\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -4897,12 +4951,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php70\\": ""
-                },
                 "files": [
                     "bootstrap.php"
                 ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php70\\": ""
+                },
                 "classmap": [
                     "Resources/stubs"
                 ]
@@ -4973,12 +5027,12 @@
                 }
             },
             "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php72\\": ""
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5527,12 +5581,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Arrayy\\": "src/"
-                },
                 "files": [
                     "src/Create.php"
-                ]
+                ],
+                "psr-4": {
+                    "Arrayy\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5740,12 +5794,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "voku\\": "src/voku/"
-                },
                 "files": [
                     "bootstrap.php"
-                ]
+                ],
+                "psr-4": {
+                    "voku\\": "src/voku/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -5875,12 +5929,12 @@
             },
             "type": "library",
             "autoload": {
-                "psr-4": {
-                    "Stringy\\": "src/"
-                },
                 "files": [
                     "src/Create.php"
-                ]
+                ],
+                "psr-4": {
+                    "Stringy\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -6048,12 +6102,12 @@
             "version": "1.9.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/webmozart/assert.git",
+                "url": "https://github.com/webmozarts/assert.git",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webmozart/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
+                "url": "https://api.github.com/repos/webmozarts/assert/zipball/bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "reference": "bafc69caeb4d49c39fd0779086c03a3738cbb389",
                 "shasum": ""
             },
@@ -6188,6 +6242,7 @@
                 "soft",
                 "yii2"
             ],
+            "abandoned": true,
             "time": "2019-07-30T11:05:57+00:00"
         },
         {
@@ -6481,16 +6536,16 @@
             "autoload": {
                 "psr-4": {
                     "yii\\queue\\": "src",
-                    "yii\\queue\\amqp\\": "src/drivers/amqp",
-                    "yii\\queue\\amqp_interop\\": "src/drivers/amqp_interop",
-                    "yii\\queue\\beanstalk\\": "src/drivers/beanstalk",
                     "yii\\queue\\db\\": "src/drivers/db",
-                    "yii\\queue\\file\\": "src/drivers/file",
-                    "yii\\queue\\gearman\\": "src/drivers/gearman",
-                    "yii\\queue\\redis\\": "src/drivers/redis",
-                    "yii\\queue\\sync\\": "src/drivers/sync",
                     "yii\\queue\\sqs\\": "src/drivers/sqs",
-                    "yii\\queue\\stomp\\": "src/drivers/stomp"
+                    "yii\\queue\\amqp\\": "src/drivers/amqp",
+                    "yii\\queue\\file\\": "src/drivers/file",
+                    "yii\\queue\\sync\\": "src/drivers/sync",
+                    "yii\\queue\\redis\\": "src/drivers/redis",
+                    "yii\\queue\\stomp\\": "src/drivers/stomp",
+                    "yii\\queue\\gearman\\": "src/drivers/gearman",
+                    "yii\\queue\\beanstalk\\": "src/drivers/beanstalk",
+                    "yii\\queue\\amqp_interop\\": "src/drivers/amqp_interop"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
